@@ -19,7 +19,7 @@
 <meta name="twitter:title" content="やきとりバル 暖らん | 宇美町の焼き鳥バル">
 <meta name="twitter:description" content="串物32種。ボリューム串とアットホームな空間。テイクアウト・デリバリーOK。">
 
-<!-- Favicon (SVG inline) -->
+<!-- Favicon -->
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍢</text></svg>">
 
 <!-- Fonts -->
@@ -78,7 +78,7 @@
 /* ===== RESET & BASE ===== */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;font-size:16px}
-body{font-family:'Noto Sans JP',sans-serif;font-weight:400;line-height:1.8;color:#e8e0d8;background:#0a0806;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body{font-family:'Noto Sans JP',sans-serif;font-weight:400;line-height:1.8;color:#3d2e1e;background:#faf6f0;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 
 /* ===== TYPOGRAPHY ===== */
 .sm{font-size:.78em}
@@ -95,139 +95,139 @@ h1,h2,h3{font-family:'Shippori Mincho',serif;font-weight:600;line-height:1.4}
 section{padding:96px 0;position:relative}
 
 /* ===== SECTION LABEL ===== */
-.section-label{display:block;font-family:'Noto Sans JP',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:#c09933;margin-bottom:12px}
-.section-title{font-size:clamp(1.6rem,4vw,2.4rem);margin-bottom:16px;color:#f5f0eb}
-.section-lead{font-size:clamp(.9rem,2.2vw,1.05rem);color:#b0a89e;max-width:600px;margin:0 auto 48px;line-height:2}
+.section-label{display:block;font-family:'Noto Sans JP',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:#c4783a;margin-bottom:12px}
+.section-title{font-size:clamp(1.6rem,4vw,2.4rem);margin-bottom:16px;color:#3d2e1e}
+.section-lead{font-size:clamp(.9rem,2.2vw,1.05rem);color:#7a6a56;max-width:600px;margin:0 auto 48px;line-height:2}
 
 /* ===== SCROLL REVEAL ===== */
 .reveal{opacity:0;transform:translateY(32px);transition:opacity .7s cubic-bezier(.25,.46,.45,.94),transform .7s cubic-bezier(.25,.46,.45,.94)}
 .reveal.is-visible{opacity:1;transform:translateY(0)}
 
-/* ===== TEXTURE OVERLAY ===== */
-.texture-overlay{position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");pointer-events:none;z-index:0}
-
 /* ===== CTA BUTTON ===== */
-.cta-btn{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,#8b5e14,#c09933);color:#f5f0eb;font-family:'Shippori Mincho',serif;font-size:clamp(1rem,2.5vw,1.2rem);font-weight:600;padding:18px 48px;border-radius:4px;text-decoration:none;letter-spacing:.08em;position:relative;overflow:hidden;transition:all .48s cubic-bezier(.25,.46,.45,.94);box-shadow:0 4px 24px rgba(192,153,51,.3)}
-.cta-btn:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(192,153,51,.5);transition:all .22s cubic-bezier(.25,.46,.45,.94)}
-.cta-btn::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.1),transparent);opacity:0;transition:opacity .48s cubic-bezier(.25,.46,.45,.94)}
-.cta-btn:hover::before{opacity:1;transition:opacity .22s cubic-bezier(.25,.46,.45,.94)}
+.cta-btn{display:inline-flex;align-items:center;gap:10px;background:#c4783a;color:#fff;font-family:'Shippori Mincho',serif;font-size:clamp(1rem,2.5vw,1.15rem);font-weight:600;padding:18px 48px;border-radius:40px;text-decoration:none;letter-spacing:.06em;position:relative;overflow:hidden;transition:all .48s cubic-bezier(.25,.46,.45,.94);box-shadow:0 4px 20px rgba(196,120,58,.25)}
+.cta-btn:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(196,120,58,.4);background:#b56a30;transition:all .22s cubic-bezier(.25,.46,.45,.94)}
 .cta-btn svg{width:20px;height:20px;flex-shrink:0}
 
 /* ===== HEADER ===== */
 .site-header{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 0;transition:background .4s,box-shadow .4s}
-.site-header.scrolled{background:rgba(10,8,6,.95);backdrop-filter:blur(12px);box-shadow:0 2px 20px rgba(0,0,0,.4)}
+.site-header.scrolled{background:rgba(250,246,240,.97);backdrop-filter:blur(12px);box-shadow:0 2px 16px rgba(61,46,30,.08)}
 .header-inner{display:flex;justify-content:space-between;align-items:center}
-.logo{font-family:'Shippori Mincho',serif;font-size:1.3rem;font-weight:700;color:#f5f0eb;text-decoration:none;letter-spacing:.06em}
-.logo-sub{display:block;font-family:'Noto Sans JP',sans-serif;font-size:.55rem;font-weight:400;letter-spacing:.25em;color:#c09933;margin-top:2px}
-.header-tel{display:flex;align-items:center;gap:6px;color:#e8e0d8;text-decoration:none;font-size:.85rem;letter-spacing:.05em;transition:color .48s cubic-bezier(.25,.46,.45,.94)}
-.header-tel:hover{color:#c09933;transition:color .22s cubic-bezier(.25,.46,.45,.94)}
+.logo{font-family:'Shippori Mincho',serif;font-size:1.3rem;font-weight:700;color:#3d2e1e;text-decoration:none;letter-spacing:.06em}
+.logo-sub{display:block;font-family:'Noto Sans JP',sans-serif;font-size:.55rem;font-weight:400;letter-spacing:.25em;color:#c4783a;margin-top:2px}
+.header-tel{display:flex;align-items:center;gap:6px;color:#5a4a38;text-decoration:none;font-size:.85rem;letter-spacing:.05em;transition:color .48s cubic-bezier(.25,.46,.45,.94)}
+.header-tel:hover{color:#c4783a;transition:color .22s cubic-bezier(.25,.46,.45,.94)}
 .header-tel svg{width:16px;height:16px}
 
 /* ===== HERO ===== */
-.hero{min-height:100vh;min-height:100dvh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
-.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,#1a120a 0%,#0d0906 50%,#0a0806 100%)}
-.hero-bg::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 40%,rgba(192,153,51,.06) 0%,transparent 70%)}
-.hero-glow{position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(192,153,51,.1) 0%,transparent 70%);top:30%;left:50%;transform:translate(-50%,-50%);animation:glowPulse 6s ease-in-out infinite alternate}
-@keyframes glowPulse{0%{opacity:.6;transform:translate(-50%,-50%) scale(1)}100%{opacity:1;transform:translate(-50%,-50%) scale(1.15)}}
+.hero{min-height:100vh;min-height:100dvh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:#3d2e1e}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(160deg,#4a3828 0%,#2e2018 40%,#3d2e1e 100%)}
+.hero-bg::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(196,120,58,.12) 0%,transparent 65%)}
+.hero-glow{position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(255,180,80,.08) 0%,transparent 70%);top:35%;left:50%;transform:translate(-50%,-50%);animation:glowPulse 8s ease-in-out infinite alternate}
+@keyframes glowPulse{0%{opacity:.5;transform:translate(-50%,-50%) scale(1)}100%{opacity:1;transform:translate(-50%,-50%) scale(1.1)}}
 .hero-content{position:relative;z-index:2;text-align:center;padding:0 24px}
-.hero-catch-pre{font-family:'Noto Sans JP',sans-serif;font-size:clamp(.7rem,1.8vw,.85rem);font-weight:500;letter-spacing:.35em;color:#c09933;margin-bottom:20px;display:block}
-.hero-catch{font-family:'Shippori Mincho',serif;font-size:clamp(2rem,6vw,3.6rem);font-weight:700;line-height:1.5;color:#f5f0eb;margin-bottom:24px;letter-spacing:.06em}
-.hero-catch .accent{color:#e8a832}
-.hero-sub{font-size:clamp(.85rem,2vw,1rem);color:#a09890;line-height:2;margin-bottom:48px;letter-spacing:.04em}
-.hero-line{width:1px;height:80px;background:linear-gradient(to bottom,#c09933,transparent);margin:0 auto 32px;animation:lineGrow 2s ease-out}
-@keyframes lineGrow{from{height:0;opacity:0}to{height:80px;opacity:1}}
-.hero-scroll{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);font-size:.7rem;letter-spacing:.2em;color:#706860;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:8px}
-.hero-scroll::after{content:'';display:block;width:1px;height:32px;background:#706860;animation:scrollLine 2s ease-in-out infinite}
+.hero-catch-pre{font-family:'Noto Sans JP',sans-serif;font-size:clamp(.7rem,1.8vw,.85rem);font-weight:400;letter-spacing:.35em;color:rgba(255,220,180,.7);margin-bottom:20px;display:block}
+.hero-catch{font-family:'Shippori Mincho',serif;font-size:clamp(1.8rem,5.5vw,3.2rem);font-weight:700;line-height:1.6;color:#f5ede4;margin-bottom:28px;letter-spacing:.04em}
+.hero-catch .accent{color:#f0a860}
+.hero-sub{font-size:clamp(.85rem,2vw,1rem);color:rgba(245,237,228,.65);line-height:2.2;margin-bottom:48px;letter-spacing:.02em}
+.hero-line{width:1px;height:60px;background:linear-gradient(to bottom,rgba(240,168,96,.5),transparent);margin:0 auto 28px;animation:lineGrow 2s ease-out}
+@keyframes lineGrow{from{height:0;opacity:0}to{height:60px;opacity:1}}
+.hero-scroll{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);font-size:.7rem;letter-spacing:.2em;color:rgba(245,237,228,.35);text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:8px}
+.hero-scroll::after{content:'';display:block;width:1px;height:32px;background:rgba(245,237,228,.3);animation:scrollLine 2s ease-in-out infinite}
 @keyframes scrollLine{0%,100%{opacity:.3;transform:scaleY(.5)}50%{opacity:1;transform:scaleY(1)}}
-.hero-badge{display:inline-block;background:rgba(192,153,51,.1);border:1px solid rgba(192,153,51,.4);padding:10px 24px;margin-bottom:24px;font-family:'Shippori Mincho',serif;font-size:clamp(.9rem,2vw,1.1rem);color:#e8c9a0;letter-spacing:.12em}
-.hero-badge strong{font-size:1.8em;color:#e8a832;font-weight:700;letter-spacing:0;margin:0 2px}
+.hero-badge{display:inline-block;background:rgba(240,168,96,.15);border:1px solid rgba(240,168,96,.35);padding:8px 20px;margin-bottom:24px;font-family:'Noto Sans JP',sans-serif;font-size:clamp(.8rem,1.8vw,.9rem);color:rgba(255,220,180,.85);letter-spacing:.1em;border-radius:24px}
+.hero-badge strong{font-size:1.6em;color:#f0a860;font-weight:700;letter-spacing:0;margin:0 2px}
 .mid-cta{text-align:center;padding:48px 24px;position:relative;z-index:1}
 .mid-cta .cta-btn{margin-bottom:12px}
-.mid-cta-sub{font-size:.78rem;color:#a09890;letter-spacing:.1em;margin-top:8px}
+.mid-cta-sub{font-size:.78rem;color:#7a6a56;letter-spacing:.1em;margin-top:8px}
 
-/* ===== CONCEPT ===== */
-.concept{background:#0c0a08}
-.concept-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:48px}
-.concept-card{background:linear-gradient(145deg,#141210,#0c0a08);border:1px solid rgba(192,153,51,.12);border-radius:8px;padding:40px 28px;text-align:center;transition:border-color .48s cubic-bezier(.25,.46,.45,.94),transform .48s cubic-bezier(.25,.46,.45,.94)}
-.concept-card:hover{border-color:rgba(192,153,51,.35);transform:translateY(-4px);transition:border-color .22s cubic-bezier(.25,.46,.45,.94),transform .22s cubic-bezier(.25,.46,.45,.94)}
-.concept-icon{width:56px;height:56px;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:rgba(192,153,51,.08);color:#c09933}
-.concept-icon svg{width:28px;height:28px}
-.concept-card h3{font-size:1.1rem;color:#f5f0eb;margin-bottom:12px;letter-spacing:.04em}
-.concept-card p{font-size:.88rem;color:#a09890;line-height:1.9}
+/* ===== INTRO MESSAGE ===== */
+.intro{background:#f5ede4;padding:80px 0}
+.intro-text{max-width:640px;margin:0 auto;text-align:center;font-size:clamp(1rem,2.5vw,1.15rem);color:#5a4a38;line-height:2.4;letter-spacing:.02em}
 
 /* ===== NUMBERS STRIP ===== */
-.numbers{background:#0a0806;border-top:1px solid rgba(192,153,51,.08);border-bottom:1px solid rgba(192,153,51,.08);padding:56px 0}
+.numbers{background:#faf6f0;border-top:1px solid rgba(196,120,58,.1);border-bottom:1px solid rgba(196,120,58,.1);padding:56px 0}
 .numbers-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:center}
-.number-item .num{font-family:'Shippori Mincho',serif;font-size:clamp(2rem,5vw,3rem);font-weight:700;color:#e8a832;line-height:1.2}
-.number-item .num-label{font-size:.8rem;color:#a09890;margin-top:4px;letter-spacing:.04em}
+.number-item .num{font-family:'Shippori Mincho',serif;font-size:clamp(2rem,5vw,3rem);font-weight:700;color:#c4783a;line-height:1.2}
+.number-item .num-label{font-size:.8rem;color:#7a6a56;margin-top:4px;letter-spacing:.04em}
+
+/* ===== CONCEPT ===== */
+.concept{background:#faf6f0}
+.concept-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:48px}
+.concept-card{background:#fff;border:1px solid rgba(196,120,58,.1);border-radius:16px;padding:40px 28px;text-align:center;transition:border-color .48s cubic-bezier(.25,.46,.45,.94),transform .48s cubic-bezier(.25,.46,.45,.94)}
+.concept-card:hover{border-color:rgba(196,120,58,.3);transform:translateY(-4px);transition:border-color .22s cubic-bezier(.25,.46,.45,.94),transform .22s cubic-bezier(.25,.46,.45,.94)}
+.concept-emoji{font-size:2.4rem;margin-bottom:16px;line-height:1}
+.concept-card h3{font-size:1.1rem;color:#3d2e1e;margin-bottom:12px;letter-spacing:.04em}
+.concept-card p{font-size:.88rem;color:#7a6a56;line-height:1.9}
 
 /* ===== MENU ===== */
-.menu{background:#0a0806}
+.menu{background:#f5ede4}
 .menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:48px}
-.menu-card{background:#121010;border-radius:8px;padding:28px;border-left:3px solid #c09933;transition:transform .48s cubic-bezier(.25,.46,.45,.94)}
+.menu-card{background:#fff;border-radius:16px;padding:28px;border-left:4px solid #c4783a;transition:transform .48s cubic-bezier(.25,.46,.45,.94)}
 .menu-card:hover{transform:translateY(-2px);transition:transform .22s cubic-bezier(.25,.46,.45,.94)}
-.menu-card h3{font-size:1rem;color:#f5f0eb;margin-bottom:8px}
-.menu-card p{font-size:.85rem;color:#a09890;line-height:1.8}
-.menu-card .price{font-family:'Shippori Mincho',serif;color:#e8a832;font-size:1rem;font-weight:600;margin-top:8px}
-.menu-note{font-size:.82rem;color:#706860;text-align:center;margin-top:32px}
+.menu-card h3{font-size:1rem;color:#3d2e1e;margin-bottom:8px}
+.menu-card p{font-size:.85rem;color:#7a6a56;line-height:1.8}
+.menu-card .price{font-family:'Shippori Mincho',serif;color:#c4783a;font-size:1rem;font-weight:600;margin-top:8px}
+.menu-note{font-size:.82rem;color:#9a8a76;text-align:center;margin-top:32px}
 
 /* ===== TAKEOUT ===== */
-.takeout{background:#0c0a08}
-.takeout-card{background:linear-gradient(145deg,#141210,#0c0a08);border:1px solid rgba(192,153,51,.15);border-radius:8px;padding:48px;max-width:640px;margin:48px auto 0;text-align:center}
-.takeout-card h3{font-size:clamp(1.2rem,3vw,1.5rem);color:#f5f0eb;margin-bottom:16px}
-.takeout-card p{font-size:.92rem;color:#a09890;line-height:2;margin-bottom:24px}
-.takeout-hours{display:flex;justify-content:center;gap:32px;flex-wrap:wrap}
+.takeout{background:#faf6f0}
+.takeout-card{background:#fff;border:1px solid rgba(196,120,58,.12);border-radius:16px;padding:48px;max-width:640px;margin:48px auto 0;text-align:center}
+.takeout-card h3{font-size:clamp(1.2rem,3vw,1.5rem);color:#3d2e1e;margin-bottom:16px}
+.takeout-card p{font-size:.92rem;color:#7a6a56;line-height:2;margin-bottom:24px}
+.takeout-hours{display:flex;justify-content:center;gap:40px;flex-wrap:wrap}
 .takeout-hours div{text-align:center}
-.takeout-hours .label{font-size:.75rem;color:#c09933;letter-spacing:.1em;margin-bottom:4px}
-.takeout-hours .time{font-family:'Shippori Mincho',serif;font-size:1.1rem;color:#f5f0eb}
+.takeout-hours .label{font-size:.75rem;color:#c4783a;letter-spacing:.1em;margin-bottom:4px}
+.takeout-hours .time{font-family:'Shippori Mincho',serif;font-size:1.1rem;color:#3d2e1e}
 
 /* ===== VOICE ===== */
-.voice{background:#0c0a08}
+.voice{background:#f5ede4}
 .voice-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
-.voice-card{background:#121010;border-radius:8px;padding:32px;border-left:3px solid #c09933;transition:transform .48s cubic-bezier(.25,.46,.45,.94)}
+.voice-card{background:#fff;border-radius:16px;padding:32px;border-left:4px solid #e8b87a;transition:transform .48s cubic-bezier(.25,.46,.45,.94)}
 .voice-card:hover{transform:translateY(-2px);transition:transform .22s cubic-bezier(.25,.46,.45,.94)}
-.voice-stars{color:#c09933;font-size:.85rem;margin-bottom:12px;letter-spacing:2px}
-.voice-text{font-size:.92rem;color:#d0c8c0;line-height:1.9;margin-bottom:16px;font-style:italic}
-.voice-text::before{content:'\201C';font-family:'Shippori Mincho',serif;font-size:2rem;color:#c09933;line-height:1;display:block;margin-bottom:4px}
-.voice-attr{font-size:.75rem;color:#706860;letter-spacing:.04em}
+.voice-stars{color:#e8a54a;font-size:.85rem;margin-bottom:12px;letter-spacing:2px}
+.voice-text{font-size:.92rem;color:#5a4a38;line-height:1.9;margin-bottom:16px;font-style:italic}
+.voice-text::before{content:'\201C';font-family:'Shippori Mincho',serif;font-size:2rem;color:#e8a54a;line-height:1;display:block;margin-bottom:4px}
+.voice-attr{font-size:.75rem;color:#9a8a76;letter-spacing:.04em}
 
 /* ===== ACCESS ===== */
-.access{background:#0a0806}
+.access{background:#faf6f0}
 .access-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
-.access-map{width:100%;aspect-ratio:4/3;border-radius:8px;overflow:hidden;border:1px solid rgba(192,153,51,.15)}
-.access-map iframe{width:100%;height:100%;border:0;filter:grayscale(.3) contrast(1.1)}
+.access-map{width:100%;aspect-ratio:4/3;border-radius:16px;overflow:hidden;border:1px solid rgba(196,120,58,.12)}
+.access-map iframe{width:100%;height:100%;border:0}
 .info-table{width:100%}
-.info-row{display:flex;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.06)}
-.info-label{width:120px;flex-shrink:0;font-size:.82rem;font-weight:500;color:#c09933;letter-spacing:.06em}
-.info-value{font-size:.9rem;color:#d0c8c0;line-height:1.7}
-.info-value a{color:#d0c8c0;text-decoration:none;border-bottom:1px solid rgba(192,153,51,.3);transition:color .48s cubic-bezier(.25,.46,.45,.94),border-color .48s cubic-bezier(.25,.46,.45,.94)}
-.info-value a:hover{color:#c09933;border-color:#c09933;transition:color .22s cubic-bezier(.25,.46,.45,.94),border-color .22s cubic-bezier(.25,.46,.45,.94)}
-.access-note{margin-top:24px;font-size:.82rem;color:#706860;line-height:1.8;list-style:none}
+.info-row{display:flex;padding:16px 0;border-bottom:1px solid rgba(61,46,30,.06)}
+.info-label{width:120px;flex-shrink:0;font-size:.82rem;font-weight:500;color:#c4783a;letter-spacing:.06em}
+.info-value{font-size:.9rem;color:#5a4a38;line-height:1.7}
+.info-value a{color:#5a4a38;text-decoration:none;border-bottom:1px solid rgba(196,120,58,.3);transition:color .48s cubic-bezier(.25,.46,.45,.94),border-color .48s cubic-bezier(.25,.46,.45,.94)}
+.info-value a:hover{color:#c4783a;border-color:#c4783a;transition:color .22s cubic-bezier(.25,.46,.45,.94),border-color .22s cubic-bezier(.25,.46,.45,.94)}
+.access-note{margin-top:24px;font-size:.82rem;color:#9a8a76;line-height:1.8;list-style:none}
 .access-note li{margin-bottom:4px;padding-left:16px;position:relative}
-.access-note li::before{content:'';position:absolute;left:0;top:10px;width:6px;height:6px;border-radius:50%;background:rgba(192,153,51,.4)}
+.access-note li::before{content:'';position:absolute;left:0;top:10px;width:6px;height:6px;border-radius:50%;background:rgba(196,120,58,.35)}
 .payment-grid{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
-.payment-tag{font-size:.72rem;color:#c09933;background:rgba(192,153,51,.08);border:1px solid rgba(192,153,51,.15);padding:4px 12px;border-radius:4px}
+.payment-tag{font-size:.72rem;color:#c4783a;background:rgba(196,120,58,.06);border:1px solid rgba(196,120,58,.12);padding:4px 12px;border-radius:20px}
 
 /* ===== CTA SECTION ===== */
-.cta-section{background:linear-gradient(135deg,#140e06 0%,#0f0a05 50%,#0a0806 100%);padding:80px 0;text-align:center;position:relative}
-.cta-section .texture-overlay{background-image:url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c09933' fill-opacity='0.03'%3E%3Cpath d='M0 0h20v20H0V0zm20 20h20v20H20V20z'/%3E%3C/g%3E%3C/svg%3E")}
-.cta-title{font-size:clamp(1.4rem,3.5vw,2rem);color:#f5f0eb;margin-bottom:16px}
-.cta-lead{font-size:.95rem;color:#a09890;margin-bottom:40px;line-height:1.9}
-.cta-tel-number{display:block;font-family:'Shippori Mincho',serif;font-size:clamp(1.6rem,4vw,2.2rem);color:#f5f0eb;letter-spacing:.08em;margin-top:20px;text-decoration:none}
-.cta-hours{font-size:.78rem;color:#706860;margin-top:12px;letter-spacing:.04em}
+.cta-section{background:#3d2e1e;padding:80px 0;text-align:center;position:relative}
+.cta-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(196,120,58,.08) 0%,transparent 60%)}
+.cta-title{font-size:clamp(1.4rem,3.5vw,2rem);color:#f5ede4;margin-bottom:16px}
+.cta-lead{font-size:.95rem;color:rgba(245,237,228,.6);margin-bottom:40px;line-height:1.9}
+.cta-section .cta-btn{background:#e89850;color:#fff}
+.cta-section .cta-btn:hover{background:#d4883e}
+.cta-tel-number{display:block;font-family:'Shippori Mincho',serif;font-size:clamp(1.6rem,4vw,2.2rem);color:#f5ede4;letter-spacing:.08em;margin-top:20px;text-decoration:none}
+.cta-hours{font-size:.78rem;color:rgba(245,237,228,.4);margin-top:12px;letter-spacing:.04em}
 
 /* ===== FOOTER ===== */
-.site-footer{background:#060504;padding:48px 0 32px;border-top:1px solid rgba(192,153,51,.08)}
+.site-footer{background:#342618;padding:48px 0 32px;border-top:1px solid rgba(196,120,58,.1)}
 .footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
-.footer-logo{font-family:'Shippori Mincho',serif;font-size:1.1rem;color:#f5f0eb;letter-spacing:.06em}
-.footer-logo span{display:block;font-family:'Noto Sans JP',sans-serif;font-size:.6rem;color:#706860;margin-top:4px;letter-spacing:.15em}
+.footer-logo{font-family:'Shippori Mincho',serif;font-size:1.1rem;color:#f5ede4;letter-spacing:.06em}
+.footer-logo span{display:block;font-family:'Noto Sans JP',sans-serif;font-size:.6rem;color:rgba(245,237,228,.4);margin-top:4px;letter-spacing:.15em}
 .footer-links{display:flex;align-items:center;gap:24px}
-.footer-links a{color:#706860;text-decoration:none;font-size:.8rem;letter-spacing:.04em;transition:color .48s cubic-bezier(.25,.46,.45,.94)}
-.footer-links a:hover{color:#c09933;transition:color .22s cubic-bezier(.25,.46,.45,.94)}
-.footer-copy{width:100%;text-align:center;font-size:.7rem;color:#504840;margin-top:32px;padding-top:24px;border-top:1px solid rgba(255,255,255,.04);letter-spacing:.06em}
+.footer-links a{color:rgba(245,237,228,.5);text-decoration:none;font-size:.8rem;letter-spacing:.04em;transition:color .48s cubic-bezier(.25,.46,.45,.94)}
+.footer-links a:hover{color:#e89850;transition:color .22s cubic-bezier(.25,.46,.45,.94)}
+.footer-copy{width:100%;text-align:center;font-size:.7rem;color:rgba(245,237,228,.25);margin-top:32px;padding-top:24px;border-top:1px solid rgba(255,255,255,.05);letter-spacing:.06em}
 
 /* ===== FLOATING CTA (MOBILE) ===== */
-.floating-cta{display:none;position:fixed;bottom:0;left:0;right:0;z-index:99;padding:12px 16px;background:rgba(10,8,6,.95);backdrop-filter:blur(12px);border-top:1px solid rgba(192,153,51,.15)}
+.floating-cta{display:none;position:fixed;bottom:0;left:0;right:0;z-index:99;padding:12px 16px;background:rgba(250,246,240,.97);backdrop-filter:blur(12px);border-top:1px solid rgba(196,120,58,.12)}
 .floating-cta .cta-btn{width:100%;justify-content:center;padding:16px;font-size:1rem}
 
 /* ===== RESPONSIVE ===== */
@@ -250,6 +250,7 @@ section{padding:96px 0;position:relative}
   .cta-btn{padding:14px 32px}
   .hero-catch{letter-spacing:.02em}
   .takeout-card{padding:32px 20px}
+  .intro{padding:56px 0}
 }
 </style>
 </head>
@@ -273,25 +274,38 @@ section{padding:96px 0;position:relative}
 <section class="hero" id="hero">
   <div class="hero-bg"></div>
   <div class="hero-glow"></div>
-  <div class="texture-overlay"></div>
   <div class="hero-content">
     <div class="hero-line"></div>
     <span class="hero-catch-pre">福岡・宇美町<span class="sm">の</span>焼き鳥バル</span>
     <h1 class="hero-catch">
-      笑顔<span class="sm">が</span>集まる、<br>
-      <span class="accent">暖</span>かい空間。
+      今日<span class="sm">も</span>おつかれさま。<br>
+      <span class="accent">暖</span>かい串<span class="sm">と</span>、<br class="sp-only">笑顔<span class="sm">が</span>待ってます。
     </h1>
-    <div class="hero-badge">串物 <strong>32</strong>種類</div>
     <p class="hero-sub">
-      カウンター8席<span class="sm">と</span>座敷18名<span class="sm">の</span>小さなバル。<br>
-      一本一本、心<span class="sm">を</span>込めて焼き上げます。
+      カウンター<span class="sm">で</span>一人<span class="sm">で</span>ほっと一息。<br>
+      座敷<span class="sm">で</span>家族<span class="sm">や</span>仲間<span class="sm">と</span>わいわい。<br>
+      どちら<span class="sm">の</span>夜<span class="sm">も</span>、ここ<span class="sm">に</span>あります。
     </p>
     <a href="tel:0929335539" class="cta-btn">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
       今夜<span class="sm">の</span>席<span class="sm">を</span>予約する
     </a>
   </div>
-  <a href="#concept" class="hero-scroll">SCROLL</a>
+  <a href="#intro" class="hero-scroll">SCROLL</a>
+</section>
+
+<!-- ===== INTRO MESSAGE ===== -->
+<section class="intro" id="intro">
+  <div class="container">
+    <p class="intro-text reveal">
+      「おかえり」「いらっしゃい」<span class="sm">の</span>声<span class="sm">が</span>聞こえる、<br>
+      宇美町<span class="sm">の</span>小さな焼き鳥バル。<br><br>
+      串物<span class="sm">は</span>全部<span class="sm">で</span>32種類。<br>
+      一本一本、心<span class="sm">を</span>込めて焼き上げます。<br><br>
+      お子様<span class="sm">から</span>ご年配<span class="sm">の</span>方<span class="sm">まで</span>、<br>
+      みんな<span class="sm">が</span>笑顔<span class="sm">に</span>なれる場所<span class="sm">で</span>ありたい。
+    </p>
+  </div>
 </section>
 
 <!-- ===== NUMBERS ===== -->
@@ -299,15 +313,15 @@ section{padding:96px 0;position:relative}
   <div class="container">
     <div class="numbers-grid reveal">
       <div class="number-item">
-        <div class="num">32<span style="font-size:.5em;color:#a09890">種</span></div>
+        <div class="num">32<span style="font-size:.5em;color:#7a6a56">種</span></div>
         <div class="num-label">串物<span class="sm">の</span>ラインナップ</div>
       </div>
       <div class="number-item">
-        <div class="num">2019<span style="font-size:.4em;color:#a09890">年〜</span></div>
+        <div class="num">2019<span style="font-size:.4em;color:#7a6a56">年〜</span></div>
         <div class="num-label">宇美町<span class="sm">で</span>開業</div>
       </div>
       <div class="number-item">
-        <div class="num">26<span style="font-size:.5em;color:#a09890">席</span></div>
+        <div class="num">26<span style="font-size:.5em;color:#7a6a56">席</span></div>
         <div class="num-label">カウンター8＋座敷18</div>
       </div>
     </div>
@@ -316,37 +330,29 @@ section{padding:96px 0;position:relative}
 
 <!-- ===== CONCEPT ===== -->
 <section class="concept" id="concept">
-  <div class="texture-overlay"></div>
-  <div class="container text-center" style="position:relative;z-index:1">
+  <div class="container text-center">
     <div class="reveal">
       <span class="section-label">Concept</span>
       <h2 class="section-title">暖らん<span class="sm">が</span>大切<span class="sm">に</span>していること</h2>
       <p class="section-lead">
-        お子様<span class="sm">から</span>ご年配<span class="sm">の</span>方<span class="sm">まで</span>。<br>
         日々<span class="sm">の</span>疲れ<span class="sm">が</span>吹き飛ぶくらい<span class="sm">の</span><br class="sp-only">笑顔<span class="sm">と</span>元気<span class="sm">を</span>届けたい。
       </p>
     </div>
     <div class="concept-grid">
       <div class="concept-card reveal">
-        <div class="concept-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><circle cx="9" cy="9" r="1" fill="currentColor"/><circle cx="15" cy="9" r="1" fill="currentColor"/></svg>
-        </div>
-        <h3>アットホーム<span class="sm">な</span>居心地</h3>
-        <p>一人<span class="sm">で</span>ふらっと寄れるカウンター。家族<span class="sm">や</span>仲間<span class="sm">と</span>過ごす座敷。「暖」<span class="sm">の</span>名<span class="sm">の</span>通り、暖かい空間です。</p>
+        <div class="concept-emoji">&#x1F3E0;</div>
+        <h3>帰りたくなる居心地</h3>
+        <p>カウンター越し<span class="sm">の</span>会話。座敷<span class="sm">で</span><span class="sm">の</span>笑い声。「また来たい」<span class="sm">じゃ</span>なくて「また帰ってきた」<span class="sm">と</span>思える場所。</p>
       </div>
       <div class="concept-card reveal">
-        <div class="concept-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </div>
-        <h3>ボリューム<span class="sm">と</span>こだわり</h3>
-        <p>1本1本<span class="sm">が</span>大きくて食べ応えあり。独自ブレンド<span class="sm">の</span>塩<span class="sm">を</span>使い、季節<span class="sm">で</span>串焼<span class="sm">の</span>量<span class="sm">を</span>調整するこだわり。</p>
+        <div class="concept-emoji">&#x1F356;</div>
+        <h3>大きな串<span class="sm">で</span>お腹いっぱい</h3>
+        <p>1本1本<span class="sm">が</span>大きくて食べ応えあり。独自ブレンド<span class="sm">の</span>塩<span class="sm">で</span>、素材<span class="sm">の</span>おいしさ<span class="sm">を</span>まっすぐ<span class="sm">に</span>。串<span class="sm">は</span>150円〜。</p>
       </div>
       <div class="concept-card reveal">
-        <div class="concept-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-        </div>
-        <h3>嬉しい価格設定</h3>
-        <p>串<span class="sm">は</span>150円〜。このボリューム<span class="sm">で</span>この価格<span class="sm">は</span>驚き、<span class="sm">と</span>口コミ<span class="sm">で</span>も多数。価格以上<span class="sm">の</span>満足<span class="sm">を</span>。</p>
+        <div class="concept-emoji">&#x1F46A;</div>
+        <h3>みんな<span class="sm">で</span>来れる</h3>
+        <p>キッズメニューあり。座敷<span class="sm">は</span>最大18名。お子様<span class="sm">も</span>、おじいちゃんおばあちゃん<span class="sm">も</span>。家族<span class="sm">の</span>食卓<span class="sm">の</span>延長<span class="sm">で</span>す。</p>
       </div>
     </div>
   </div>
@@ -354,13 +360,12 @@ section{padding:96px 0;position:relative}
 
 <!-- ===== MENU ===== -->
 <section class="menu" id="menu">
-  <div class="texture-overlay"></div>
-  <div class="container" style="position:relative;z-index:1">
+  <div class="container">
     <div class="text-center reveal">
       <span class="section-label">Menu</span>
       <h2 class="section-title">おしながき</h2>
       <p class="section-lead">
-        串もの32種<span class="sm">を</span>はじめ、<br class="sp-only">逸品料理<span class="sm">も</span>充実。
+        「あれ<span class="sm">も</span>食べたい、これ<span class="sm">も</span>食べたい」<br class="sp-only"><span class="sm">が</span>きっと見つかります。
       </p>
     </div>
 
@@ -376,11 +381,11 @@ section{padding:96px 0;position:relative}
       </div>
       <div class="menu-card reveal">
         <h3>国産厚切りタンステーキ</h3>
-        <p>ぶ厚く切った国産タン<span class="sm">を</span>じっくり焼き上げた贅沢<span class="sm">な</span>一品。特別<span class="sm">な</span>日<span class="sm">に</span><span class="sm">も</span>、ご褒美<span class="sm">に</span><span class="sm">も</span>。</p>
+        <p>ぶ厚く切った国産タン<span class="sm">を</span>じっくり焼き上げた一品。ちょっと<span class="sm">い</span><span class="sm">い</span>日<span class="sm">の</span>ご褒美<span class="sm">に</span>。</p>
       </div>
       <div class="menu-card reveal">
         <h3>鉄板・ご飯もの</h3>
-        <p>手作りハンバーグ・焼おにぎり串・親子丼<span class="sm">など</span>、串<span class="sm">だ</span><span class="sm">け</span><span class="sm">じゃ</span>ない充実<span class="sm">の</span>ラインナップ。〆<span class="sm">の</span>一品<span class="sm">も</span>。</p>
+        <p>手作りハンバーグ・焼おにぎり串・親子丼<span class="sm">など</span>、〆<span class="sm">まで</span>楽しめる充実<span class="sm">の</span>ラインナップ。</p>
       </div>
       <div class="menu-card reveal">
         <h3>ドリンク</h3>
@@ -407,17 +412,16 @@ section{padding:96px 0;position:relative}
 
 <!-- ===== TAKEOUT & DELIVERY ===== -->
 <section class="takeout" id="takeout">
-  <div class="texture-overlay"></div>
-  <div class="container" style="position:relative;z-index:1">
+  <div class="container">
     <div class="text-center reveal">
       <span class="section-label">Takeout & Delivery</span>
       <h2 class="section-title">お持ち帰り・配達</h2>
     </div>
     <div class="takeout-card reveal">
-      <h3>ご自宅<span class="sm">で</span><span class="sm">も</span>、暖らん<span class="sm">の</span>味<span class="sm">を</span>。</h3>
+      <h3>おうち<span class="sm">で</span><span class="sm">も</span>、暖らん<span class="sm">の</span>味<span class="sm">を</span>。</h3>
       <p>
-        お店<span class="sm">と</span>同じクオリティ<span class="sm">の</span>焼き鳥<span class="sm">を</span>、<br class="sp-only">
-        テイクアウト・デリバリー<span class="sm">で</span>お届けします。<br>
+        お店<span class="sm">と</span>同じ気持ち<span class="sm">で</span>焼き上げた串<span class="sm">を</span>、<br class="sp-only">
+        ご自宅<span class="sm">の</span>食卓<span class="sm">へ</span>お届けします。<br>
         お電話<span class="sm">に</span><span class="sm">て</span>ご注文ください。
       </p>
       <div class="takeout-hours">
@@ -436,13 +440,12 @@ section{padding:96px 0;position:relative}
 
 <!-- ===== VOICE ===== -->
 <section class="voice" id="voice">
-  <div class="texture-overlay"></div>
-  <div class="container" style="position:relative;z-index:1">
+  <div class="container">
     <div class="text-center reveal">
       <span class="section-label">Voice</span>
       <h2 class="section-title">お客様<span class="sm">の</span>声</h2>
       <p class="section-lead">
-        ご来店いただいた皆様<span class="sm">から</span><br class="sp-only">嬉しいお言葉<span class="sm">を</span>いただいています。
+        嬉しい言葉<span class="sm">が</span>、<br class="sp-only">明日<span class="sm">の</span>元気<span class="sm">に</span>なっています。
       </p>
     </div>
 
@@ -473,8 +476,7 @@ section{padding:96px 0;position:relative}
 
 <!-- ===== ACCESS ===== -->
 <section class="access" id="access">
-  <div class="texture-overlay"></div>
-  <div class="container" style="position:relative;z-index:1">
+  <div class="container">
     <div class="text-center reveal">
       <span class="section-label">Access</span>
       <h2 class="section-title">アクセス・店舗情報</h2>
@@ -502,7 +504,7 @@ section{padding:96px 0;position:relative}
             <div class="info-label">営業時間</div>
             <div class="info-value">
               18:00〜24:00<br>
-              <span style="font-size:.8rem;color:#706860">（L.O. 23:30）</span>
+              <span style="font-size:.8rem;color:#9a8a76">（L.O. 23:30）</span>
             </div>
           </div>
           <div class="info-row">
@@ -515,7 +517,7 @@ section{padding:96px 0;position:relative}
           </div>
           <div class="info-row">
             <div class="info-label">定休日</div>
-            <div class="info-value">月曜日<span style="font-size:.8rem;color:#706860">（祝日<span class="sm">の</span>場合<span class="sm">は</span>翌火曜日）</span></div>
+            <div class="info-value">月曜日<span style="font-size:.8rem;color:#9a8a76">（祝日<span class="sm">の</span>場合<span class="sm">は</span>翌火曜日）</span></div>
           </div>
           <div class="info-row">
             <div class="info-label">席数</div>
@@ -554,13 +556,12 @@ section{padding:96px 0;position:relative}
 
 <!-- ===== CTA ===== -->
 <section class="cta-section" id="cta">
-  <div class="texture-overlay"></div>
   <div class="container" style="position:relative;z-index:1">
     <div class="reveal">
-      <h2 class="cta-title mincho">ご予約・お問い合わせ</h2>
+      <h2 class="cta-title mincho">今日<span class="sm">の</span>一杯、ここ<span class="sm">で</span>どうですか。</h2>
       <p class="cta-lead">
-        串物32種<span class="sm">と</span>暖かい空間<span class="sm">で</span>、<br>
-        今日<span class="sm">の</span>疲れ<span class="sm">を</span>吹き飛ばしませんか。
+        おいしい串<span class="sm">と</span>、あったかい空気<span class="sm">と</span>、<br>
+        誰か<span class="sm">の</span>笑い声。それだけ<span class="sm">で</span>、いい夜<span class="sm">に</span>なる。
       </p>
       <a href="tel:0929335539" class="cta-btn">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -602,7 +603,6 @@ section{padding:96px 0;position:relative}
 (function(){
   'use strict';
 
-  // Header scroll effect
   var header = document.getElementById('header');
   window.addEventListener('scroll', function(){
     if(window.pageYOffset > 60){
@@ -612,7 +612,6 @@ section{padding:96px 0;position:relative}
     }
   }, {passive: true});
 
-  // Scroll reveal with IntersectionObserver
   var reveals = document.querySelectorAll('.reveal');
   if('IntersectionObserver' in window){
     var observer = new IntersectionObserver(function(entries){
@@ -635,7 +634,6 @@ section{padding:96px 0;position:relative}
     });
   }
 
-  // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(function(a){
     a.addEventListener('click', function(e){
       var target = document.querySelector(this.getAttribute('href'));
@@ -646,7 +644,6 @@ section{padding:96px 0;position:relative}
     });
   });
 
-  // Floating CTA: hide when near CTA section or hero
   var floatingCta = document.querySelector('.floating-cta');
   var ctaSection = document.getElementById('cta');
   if(floatingCta && ctaSection){
