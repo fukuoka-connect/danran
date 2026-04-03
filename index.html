@@ -25,7 +25,7 @@
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Shippori+Mincho:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
 
 <!-- Schema.org -->
 <script type="application/ld+json">
@@ -59,31 +59,21 @@
   ],
   "servesCuisine": ["焼き鳥", "居酒屋", "バル"],
   "priceRange": "￥2,000〜￥4,000",
-  "hasMenu": {
-    "@type": "Menu",
-    "hasMenuSection": {
-      "@type": "MenuSection",
-      "name": "串もの",
-      "description": "国産串物32種類"
-    }
-  },
-  "sameAs": [
-    "https://www.instagram.com/yakitoribaru_danran/"
-  ],
+  "sameAs": ["https://www.instagram.com/yakitoribaru_danran/"],
   "foundingDate": "2019"
 }
 </script>
 
 <style>
-/* ===== RESET & BASE ===== */
+/* ===== RESET ===== */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;font-size:16px}
-body{font-family:'Noto Sans JP',sans-serif;font-weight:400;line-height:1.8;color:#3d2e1e;background:#faf6f0;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body{font-family:'Noto Sans JP',sans-serif;font-weight:400;line-height:1.8;color:#f0e8de;background:#1c1510;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 
 /* ===== TYPOGRAPHY ===== */
 .sm{font-size:.78em}
-.mincho{font-family:'Shippori Mincho',serif}
-h1,h2,h3{font-family:'Shippori Mincho',serif;font-weight:600;line-height:1.4}
+.round{font-family:'Zen Maru Gothic',sans-serif}
+h1,h2,h3{font-family:'Zen Maru Gothic',sans-serif;font-weight:700;line-height:1.4}
 .sp-only{display:none}
 @media(max-width:600px){.sp-only{display:inline}}
 
@@ -91,166 +81,169 @@ h1,h2,h3{font-family:'Shippori Mincho',serif;font-weight:600;line-height:1.4}
 .container{width:100%;max-width:1080px;margin:0 auto;padding:0 24px}
 .text-center{text-align:center}
 
-/* ===== SECTION BASE ===== */
-section{padding:96px 0;position:relative}
+/* ===== SECTION ===== */
+section{padding:88px 0;position:relative}
+.bg-dark{background:#1c1510}
+.bg-brown{background:#241c14}
+.bg-warm{background:#2a2018}
 
-/* ===== SECTION LABEL ===== */
-.section-label{display:block;font-family:'Noto Sans JP',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:#c4783a;margin-bottom:12px}
-.section-title{font-size:clamp(1.6rem,4vw,2.4rem);margin-bottom:16px;color:#3d2e1e}
-.section-lead{font-size:clamp(.9rem,2.2vw,1.05rem);color:#7a6a56;max-width:600px;margin:0 auto 48px;line-height:2}
+/* ===== SECTION HEADER ===== */
+.sec-label{display:inline-block;font-family:'Noto Sans JP',sans-serif;font-size:.65rem;font-weight:500;letter-spacing:.35em;text-transform:uppercase;color:#d4a05a;background:rgba(212,160,90,.1);padding:6px 18px;border-radius:20px;margin-bottom:16px}
+.sec-title{font-size:clamp(1.5rem,4vw,2.2rem);margin-bottom:12px;color:#f5ede4}
+.sec-lead{font-size:clamp(.88rem,2.2vw,1rem);color:#a89880;max-width:560px;margin:0 auto 48px;line-height:2}
 
-/* ===== SCROLL REVEAL ===== */
-.reveal{opacity:0;transform:translateY(32px);transition:opacity .7s cubic-bezier(.25,.46,.45,.94),transform .7s cubic-bezier(.25,.46,.45,.94)}
+/* ===== REVEAL ===== */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.25,.46,.45,.94),transform .7s cubic-bezier(.25,.46,.45,.94)}
 .reveal.is-visible{opacity:1;transform:translateY(0)}
 
 /* ===== CTA BUTTON ===== */
-.cta-btn{display:inline-flex;align-items:center;gap:10px;background:#c4783a;color:#fff;font-family:'Shippori Mincho',serif;font-size:clamp(1rem,2.5vw,1.15rem);font-weight:600;padding:18px 48px;border-radius:40px;text-decoration:none;letter-spacing:.06em;position:relative;overflow:hidden;transition:all .48s cubic-bezier(.25,.46,.45,.94);box-shadow:0 4px 20px rgba(196,120,58,.25)}
-.cta-btn:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(196,120,58,.4);background:#b56a30;transition:all .22s cubic-bezier(.25,.46,.45,.94)}
-.cta-btn svg{width:20px;height:20px;flex-shrink:0}
+.cta-btn{display:inline-flex;align-items:center;gap:10px;background:#d4a05a;color:#1c1510;font-family:'Zen Maru Gothic',sans-serif;font-size:clamp(.95rem,2.4vw,1.1rem);font-weight:700;padding:16px 44px;border-radius:40px;text-decoration:none;letter-spacing:.04em;transition:all .48s cubic-bezier(.25,.46,.45,.94);box-shadow:0 4px 20px rgba(212,160,90,.2)}
+.cta-btn:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(212,160,90,.35);background:#c49048;transition:all .22s cubic-bezier(.25,.46,.45,.94)}
+.cta-btn svg{width:18px;height:18px;flex-shrink:0}
+.cta-sub{font-size:.75rem;color:#a89880;margin-top:10px;letter-spacing:.06em}
 
 /* ===== HEADER ===== */
-.site-header{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 0;transition:background .4s,box-shadow .4s}
-.site-header.scrolled{background:rgba(250,246,240,.97);backdrop-filter:blur(12px);box-shadow:0 2px 16px rgba(61,46,30,.08)}
+.site-header{position:fixed;top:0;left:0;right:0;z-index:100;padding:14px 0;transition:background .4s,box-shadow .4s}
+.site-header.scrolled{background:rgba(28,21,16,.96);backdrop-filter:blur(12px);box-shadow:0 2px 16px rgba(0,0,0,.3)}
 .header-inner{display:flex;justify-content:space-between;align-items:center}
-.logo{font-family:'Shippori Mincho',serif;font-size:1.3rem;font-weight:700;color:#3d2e1e;text-decoration:none;letter-spacing:.06em}
-.logo-sub{display:block;font-family:'Noto Sans JP',sans-serif;font-size:.55rem;font-weight:400;letter-spacing:.25em;color:#c4783a;margin-top:2px}
-.header-tel{display:flex;align-items:center;gap:6px;color:#5a4a38;text-decoration:none;font-size:.85rem;letter-spacing:.05em;transition:color .48s cubic-bezier(.25,.46,.45,.94)}
-.header-tel:hover{color:#c4783a;transition:color .22s cubic-bezier(.25,.46,.45,.94)}
-.header-tel svg{width:16px;height:16px}
+.logo{font-family:'Zen Maru Gothic',sans-serif;font-size:1.4rem;font-weight:700;color:#f5ede4;text-decoration:none}
+.logo-sub{display:block;font-family:'Noto Sans JP',sans-serif;font-size:.5rem;font-weight:400;letter-spacing:.3em;color:#d4a05a;margin-top:1px}
+.header-tel{display:flex;align-items:center;gap:6px;color:#c8b8a0;text-decoration:none;font-size:.82rem;transition:color .48s cubic-bezier(.25,.46,.45,.94)}
+.header-tel:hover{color:#d4a05a;transition:color .22s cubic-bezier(.25,.46,.45,.94)}
+.header-tel svg{width:15px;height:15px}
 
-/* ===== HERO ===== */
-.hero{min-height:100vh;min-height:100dvh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:#3d2e1e}
-.hero-bg{position:absolute;inset:0;background:linear-gradient(160deg,#4a3828 0%,#2e2018 40%,#3d2e1e 100%)}
-.hero-bg::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(196,120,58,.12) 0%,transparent 65%)}
-.hero-glow{position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(255,180,80,.08) 0%,transparent 70%);top:35%;left:50%;transform:translate(-50%,-50%);animation:glowPulse 8s ease-in-out infinite alternate}
-@keyframes glowPulse{0%{opacity:.5;transform:translate(-50%,-50%) scale(1)}100%{opacity:1;transform:translate(-50%,-50%) scale(1.1)}}
-.hero-content{position:relative;z-index:2;text-align:center;padding:0 24px}
-.hero-catch-pre{font-family:'Noto Sans JP',sans-serif;font-size:clamp(.7rem,1.8vw,.85rem);font-weight:400;letter-spacing:.35em;color:rgba(255,220,180,.7);margin-bottom:20px;display:block}
-.hero-catch{font-family:'Shippori Mincho',serif;font-size:clamp(1.8rem,5.5vw,3.2rem);font-weight:700;line-height:1.6;color:#f5ede4;margin-bottom:28px;letter-spacing:.04em}
-.hero-catch .accent{color:#f0a860}
-.hero-sub{font-size:clamp(.85rem,2vw,1rem);color:rgba(245,237,228,.65);line-height:2.2;margin-bottom:48px;letter-spacing:.02em}
-.hero-line{width:1px;height:60px;background:linear-gradient(to bottom,rgba(240,168,96,.5),transparent);margin:0 auto 28px;animation:lineGrow 2s ease-out}
-@keyframes lineGrow{from{height:0;opacity:0}to{height:60px;opacity:1}}
-.hero-scroll{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);font-size:.7rem;letter-spacing:.2em;color:rgba(245,237,228,.35);text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:8px}
-.hero-scroll::after{content:'';display:block;width:1px;height:32px;background:rgba(245,237,228,.3);animation:scrollLine 2s ease-in-out infinite}
+/* ===== HERO — ジグザグ2段型 ===== */
+.hero{min-height:100vh;min-height:100dvh;display:flex;align-items:center;position:relative;overflow:hidden;background:#1c1510}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 40%,rgba(212,160,90,.07) 0%,transparent 60%)}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;position:relative;z-index:1}
+.hero-text{padding:120px 0 80px}
+.hero-tag{display:inline-block;font-size:.7rem;letter-spacing:.3em;color:#d4a05a;background:rgba(212,160,90,.1);padding:6px 16px;border-radius:20px;margin-bottom:24px}
+.hero h1{font-size:clamp(1.8rem,4.5vw,2.8rem);color:#f5ede4;line-height:1.5;margin-bottom:20px}
+.hero h1 .accent{color:#e8b868}
+.hero-sub{font-size:clamp(.88rem,2vw,.98rem);color:#a89880;line-height:2.2;margin-bottom:36px}
+.hero-visual{position:relative;display:flex;align-items:center;justify-content:center;padding:80px 0}
+.hero-emoji-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:320px}
+.hero-emoji-card{background:rgba(255,255,255,.04);border:1px solid rgba(212,160,90,.12);border-radius:16px;padding:24px 16px;text-align:center;transition:transform .48s cubic-bezier(.25,.46,.45,.94),border-color .48s cubic-bezier(.25,.46,.45,.94)}
+.hero-emoji-card:hover{transform:translateY(-4px);border-color:rgba(212,160,90,.3);transition:transform .22s cubic-bezier(.25,.46,.45,.94),border-color .22s cubic-bezier(.25,.46,.45,.94)}
+.hero-emoji-card .emoji{font-size:2rem;margin-bottom:8px}
+.hero-emoji-card .card-label{font-size:.65rem;color:#a89880;letter-spacing:.04em}
+.hero-scroll{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);font-size:.65rem;letter-spacing:.25em;color:rgba(168,152,128,.4);text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:6px}
+.hero-scroll::after{content:'';display:block;width:1px;height:28px;background:rgba(168,152,128,.3);animation:scrollLine 2s ease-in-out infinite}
 @keyframes scrollLine{0%,100%{opacity:.3;transform:scaleY(.5)}50%{opacity:1;transform:scaleY(1)}}
-.hero-badge{display:inline-block;background:rgba(240,168,96,.15);border:1px solid rgba(240,168,96,.35);padding:8px 20px;margin-bottom:24px;font-family:'Noto Sans JP',sans-serif;font-size:clamp(.8rem,1.8vw,.9rem);color:rgba(255,220,180,.85);letter-spacing:.1em;border-radius:24px}
-.hero-badge strong{font-size:1.6em;color:#f0a860;font-weight:700;letter-spacing:0;margin:0 2px}
-.mid-cta{text-align:center;padding:48px 24px;position:relative;z-index:1}
-.mid-cta .cta-btn{margin-bottom:12px}
-.mid-cta-sub{font-size:.78rem;color:#7a6a56;letter-spacing:.1em;margin-top:8px}
 
-/* ===== INTRO MESSAGE ===== */
-.intro{background:#f5ede4;padding:80px 0}
-.intro-text{max-width:640px;margin:0 auto;text-align:center;font-size:clamp(1rem,2.5vw,1.15rem);color:#5a4a38;line-height:2.4;letter-spacing:.02em}
+/* ===== MESSAGE（ジグザグ左） ===== */
+.message{background:#241c14}
+.message-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:56px;align-items:center}
+.message-emoji{font-size:clamp(4rem,10vw,6rem);text-align:center;line-height:1;filter:drop-shadow(0 8px 24px rgba(212,160,90,.1))}
+.message-body h2{font-size:clamp(1.3rem,3vw,1.8rem);color:#f5ede4;margin-bottom:16px}
+.message-body p{font-size:.95rem;color:#b8a890;line-height:2.2}
 
-/* ===== NUMBERS STRIP ===== */
-.numbers{background:#faf6f0;border-top:1px solid rgba(196,120,58,.1);border-bottom:1px solid rgba(196,120,58,.1);padding:56px 0}
-.numbers-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:center}
-.number-item .num{font-family:'Shippori Mincho',serif;font-size:clamp(2rem,5vw,3rem);font-weight:700;color:#c4783a;line-height:1.2}
-.number-item .num-label{font-size:.8rem;color:#7a6a56;margin-top:4px;letter-spacing:.04em}
+/* ===== NUMBERS ===== */
+.numbers{padding:48px 0}
+.numbers-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;text-align:center}
+.number-card{background:rgba(255,255,255,.03);border:1px solid rgba(212,160,90,.08);border-radius:16px;padding:32px 16px}
+.number-card .num{font-family:'Zen Maru Gothic',sans-serif;font-size:clamp(2rem,5vw,2.8rem);font-weight:700;color:#e8b868;line-height:1.2}
+.number-card .num-unit{font-size:.5em;color:#a89880;font-weight:400}
+.number-card .num-label{font-size:.75rem;color:#a89880;margin-top:6px}
 
-/* ===== CONCEPT ===== */
-.concept{background:#faf6f0}
-.concept-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:48px}
-.concept-card{background:#fff;border:1px solid rgba(196,120,58,.1);border-radius:16px;padding:40px 28px;text-align:center;transition:border-color .48s cubic-bezier(.25,.46,.45,.94),transform .48s cubic-bezier(.25,.46,.45,.94)}
-.concept-card:hover{border-color:rgba(196,120,58,.3);transform:translateY(-4px);transition:border-color .22s cubic-bezier(.25,.46,.45,.94),transform .22s cubic-bezier(.25,.46,.45,.94)}
-.concept-emoji{font-size:2.4rem;margin-bottom:16px;line-height:1}
-.concept-card h3{font-size:1.1rem;color:#3d2e1e;margin-bottom:12px;letter-spacing:.04em}
-.concept-card p{font-size:.88rem;color:#7a6a56;line-height:1.9}
+/* ===== MENU — カードグリッド型 ===== */
+.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
+.menu-card{background:rgba(255,255,255,.04);border:1px solid rgba(212,160,90,.08);border-radius:16px;padding:28px 24px;transition:transform .48s cubic-bezier(.25,.46,.45,.94),border-color .48s cubic-bezier(.25,.46,.45,.94)}
+.menu-card:hover{transform:translateY(-4px);border-color:rgba(212,160,90,.25);transition:transform .22s cubic-bezier(.25,.46,.45,.94),border-color .22s cubic-bezier(.25,.46,.45,.94)}
+.menu-card .menu-emoji{font-size:1.8rem;margin-bottom:12px}
+.menu-card h3{font-size:.95rem;color:#f5ede4;margin-bottom:8px}
+.menu-card p{font-size:.82rem;color:#a89880;line-height:1.8}
+.menu-card .price{color:#e8b868;font-family:'Zen Maru Gothic',sans-serif;font-weight:700;font-size:.9rem;margin-top:10px}
+.menu-note{font-size:.78rem;color:rgba(168,152,128,.5);text-align:center;margin-top:28px}
 
-/* ===== MENU ===== */
-.menu{background:#f5ede4}
-.menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:48px}
-.menu-card{background:#fff;border-radius:16px;padding:28px;border-left:4px solid #c4783a;transition:transform .48s cubic-bezier(.25,.46,.45,.94)}
-.menu-card:hover{transform:translateY(-2px);transition:transform .22s cubic-bezier(.25,.46,.45,.94)}
-.menu-card h3{font-size:1rem;color:#3d2e1e;margin-bottom:8px}
-.menu-card p{font-size:.85rem;color:#7a6a56;line-height:1.8}
-.menu-card .price{font-family:'Shippori Mincho',serif;color:#c4783a;font-size:1rem;font-weight:600;margin-top:8px}
-.menu-note{font-size:.82rem;color:#9a8a76;text-align:center;margin-top:32px}
+/* ===== TAKEOUT（ジグザグ右） ===== */
+.takeout-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:center;margin-top:48px}
+.takeout-body h3{font-size:clamp(1.2rem,3vw,1.5rem);color:#f5ede4;margin-bottom:16px}
+.takeout-body p{font-size:.92rem;color:#b8a890;line-height:2;margin-bottom:28px}
+.takeout-hours{display:flex;gap:24px;flex-wrap:wrap}
+.takeout-hours div{background:rgba(212,160,90,.06);border:1px solid rgba(212,160,90,.12);border-radius:12px;padding:16px 24px;text-align:center}
+.takeout-hours .label{font-size:.65rem;color:#d4a05a;letter-spacing:.15em;margin-bottom:4px}
+.takeout-hours .time{font-family:'Zen Maru Gothic',sans-serif;font-size:1.05rem;font-weight:700;color:#f5ede4}
+.takeout-emoji{font-size:clamp(4rem,10vw,6rem);text-align:center;line-height:1}
 
-/* ===== TAKEOUT ===== */
-.takeout{background:#faf6f0}
-.takeout-card{background:#fff;border:1px solid rgba(196,120,58,.12);border-radius:16px;padding:48px;max-width:640px;margin:48px auto 0;text-align:center}
-.takeout-card h3{font-size:clamp(1.2rem,3vw,1.5rem);color:#3d2e1e;margin-bottom:16px}
-.takeout-card p{font-size:.92rem;color:#7a6a56;line-height:2;margin-bottom:24px}
-.takeout-hours{display:flex;justify-content:center;gap:40px;flex-wrap:wrap}
-.takeout-hours div{text-align:center}
-.takeout-hours .label{font-size:.75rem;color:#c4783a;letter-spacing:.1em;margin-bottom:4px}
-.takeout-hours .time{font-family:'Shippori Mincho',serif;font-size:1.1rem;color:#3d2e1e}
+/* ===== VOICE — 横スクロールカード ===== */
+.voice-scroll{display:flex;gap:20px;overflow-x:auto;padding:48px 0 20px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.voice-scroll::-webkit-scrollbar{display:none}
+.voice-card{min-width:300px;max-width:340px;flex-shrink:0;scroll-snap-align:start;background:rgba(255,255,255,.04);border:1px solid rgba(212,160,90,.08);border-radius:16px;padding:28px 24px}
+.voice-stars{color:#e8b868;font-size:.8rem;margin-bottom:10px;letter-spacing:2px}
+.voice-text{font-size:.88rem;color:#c8b8a0;line-height:1.9;margin-bottom:14px}
+.voice-text::before{content:'\201C';font-family:'Zen Maru Gothic',sans-serif;font-size:1.8rem;color:#d4a05a;line-height:1;display:block;margin-bottom:4px}
+.voice-attr{font-size:.7rem;color:rgba(168,152,128,.6)}
+.voice-hint{font-size:.72rem;color:rgba(168,152,128,.4);text-align:center;margin-top:12px;letter-spacing:.04em}
 
-/* ===== VOICE ===== */
-.voice{background:#f5ede4}
-.voice-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
-.voice-card{background:#fff;border-radius:16px;padding:32px;border-left:4px solid #e8b87a;transition:transform .48s cubic-bezier(.25,.46,.45,.94)}
-.voice-card:hover{transform:translateY(-2px);transition:transform .22s cubic-bezier(.25,.46,.45,.94)}
-.voice-stars{color:#e8a54a;font-size:.85rem;margin-bottom:12px;letter-spacing:2px}
-.voice-text{font-size:.92rem;color:#5a4a38;line-height:1.9;margin-bottom:16px;font-style:italic}
-.voice-text::before{content:'\201C';font-family:'Shippori Mincho',serif;font-size:2rem;color:#e8a54a;line-height:1;display:block;margin-bottom:4px}
-.voice-attr{font-size:.75rem;color:#9a8a76;letter-spacing:.04em}
-
-/* ===== ACCESS ===== */
-.access{background:#faf6f0}
+/* ===== ACCESS — ジグザグ左 ===== */
 .access-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
-.access-map{width:100%;aspect-ratio:4/3;border-radius:16px;overflow:hidden;border:1px solid rgba(196,120,58,.12)}
-.access-map iframe{width:100%;height:100%;border:0}
+.access-map{width:100%;aspect-ratio:4/3;border-radius:16px;overflow:hidden;border:1px solid rgba(212,160,90,.08)}
+.access-map iframe{width:100%;height:100%;border:0;filter:brightness(.9) contrast(1.05)}
 .info-table{width:100%}
-.info-row{display:flex;padding:16px 0;border-bottom:1px solid rgba(61,46,30,.06)}
-.info-label{width:120px;flex-shrink:0;font-size:.82rem;font-weight:500;color:#c4783a;letter-spacing:.06em}
-.info-value{font-size:.9rem;color:#5a4a38;line-height:1.7}
-.info-value a{color:#5a4a38;text-decoration:none;border-bottom:1px solid rgba(196,120,58,.3);transition:color .48s cubic-bezier(.25,.46,.45,.94),border-color .48s cubic-bezier(.25,.46,.45,.94)}
-.info-value a:hover{color:#c4783a;border-color:#c4783a;transition:color .22s cubic-bezier(.25,.46,.45,.94),border-color .22s cubic-bezier(.25,.46,.45,.94)}
-.access-note{margin-top:24px;font-size:.82rem;color:#9a8a76;line-height:1.8;list-style:none}
-.access-note li{margin-bottom:4px;padding-left:16px;position:relative}
-.access-note li::before{content:'';position:absolute;left:0;top:10px;width:6px;height:6px;border-radius:50%;background:rgba(196,120,58,.35)}
-.payment-grid{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
-.payment-tag{font-size:.72rem;color:#c4783a;background:rgba(196,120,58,.06);border:1px solid rgba(196,120,58,.12);padding:4px 12px;border-radius:20px}
+.info-row{display:flex;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.04)}
+.info-label{width:110px;flex-shrink:0;font-size:.78rem;font-weight:500;color:#d4a05a;letter-spacing:.04em}
+.info-value{font-size:.85rem;color:#c8b8a0;line-height:1.7}
+.info-value a{color:#c8b8a0;text-decoration:none;border-bottom:1px solid rgba(212,160,90,.25);transition:color .48s cubic-bezier(.25,.46,.45,.94)}
+.info-value a:hover{color:#d4a05a;transition:color .22s cubic-bezier(.25,.46,.45,.94)}
+.access-note{margin-top:20px;font-size:.78rem;color:rgba(168,152,128,.5);line-height:1.8;list-style:none}
+.access-note li{margin-bottom:4px;padding-left:14px;position:relative}
+.access-note li::before{content:'';position:absolute;left:0;top:10px;width:5px;height:5px;border-radius:50%;background:rgba(212,160,90,.3)}
+.pay-grid{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.pay-tag{font-size:.65rem;color:#d4a05a;background:rgba(212,160,90,.06);border:1px solid rgba(212,160,90,.1);padding:3px 10px;border-radius:16px}
 
 /* ===== CTA SECTION ===== */
-.cta-section{background:#3d2e1e;padding:80px 0;text-align:center;position:relative}
-.cta-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(196,120,58,.08) 0%,transparent 60%)}
-.cta-title{font-size:clamp(1.4rem,3.5vw,2rem);color:#f5ede4;margin-bottom:16px}
-.cta-lead{font-size:.95rem;color:rgba(245,237,228,.6);margin-bottom:40px;line-height:1.9}
-.cta-section .cta-btn{background:#e89850;color:#fff}
-.cta-section .cta-btn:hover{background:#d4883e}
-.cta-tel-number{display:block;font-family:'Shippori Mincho',serif;font-size:clamp(1.6rem,4vw,2.2rem);color:#f5ede4;letter-spacing:.08em;margin-top:20px;text-decoration:none}
-.cta-hours{font-size:.78rem;color:rgba(245,237,228,.4);margin-top:12px;letter-spacing:.04em}
+.cta-section{background:linear-gradient(160deg,#2a2018,#1c1510);padding:72px 0;text-align:center}
+.cta-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(212,160,90,.06) 0%,transparent 55%)}
+.cta-emoji{font-size:3rem;margin-bottom:20px}
+.cta-title{font-size:clamp(1.3rem,3.5vw,1.8rem);color:#f5ede4;margin-bottom:12px}
+.cta-lead{font-size:.9rem;color:#a89880;margin-bottom:36px;line-height:2}
+.cta-section .cta-btn{background:#e8b868;color:#1c1510}
+.cta-section .cta-btn:hover{background:#d4a654}
+.cta-tel{display:block;font-family:'Zen Maru Gothic',sans-serif;font-size:clamp(1.4rem,3.5vw,2rem);font-weight:700;color:#f5ede4;letter-spacing:.06em;margin-top:18px;text-decoration:none}
+.cta-hours{font-size:.72rem;color:rgba(168,152,128,.5);margin-top:10px}
 
 /* ===== FOOTER ===== */
-.site-footer{background:#342618;padding:48px 0 32px;border-top:1px solid rgba(196,120,58,.1)}
+.site-footer{background:#14100c;padding:40px 0 28px;border-top:1px solid rgba(212,160,90,.06)}
 .footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
-.footer-logo{font-family:'Shippori Mincho',serif;font-size:1.1rem;color:#f5ede4;letter-spacing:.06em}
-.footer-logo span{display:block;font-family:'Noto Sans JP',sans-serif;font-size:.6rem;color:rgba(245,237,228,.4);margin-top:4px;letter-spacing:.15em}
-.footer-links{display:flex;align-items:center;gap:24px}
-.footer-links a{color:rgba(245,237,228,.5);text-decoration:none;font-size:.8rem;letter-spacing:.04em;transition:color .48s cubic-bezier(.25,.46,.45,.94)}
-.footer-links a:hover{color:#e89850;transition:color .22s cubic-bezier(.25,.46,.45,.94)}
-.footer-copy{width:100%;text-align:center;font-size:.7rem;color:rgba(245,237,228,.25);margin-top:32px;padding-top:24px;border-top:1px solid rgba(255,255,255,.05);letter-spacing:.06em}
+.footer-logo{font-family:'Zen Maru Gothic',sans-serif;font-size:1rem;color:#f5ede4}
+.footer-logo span{display:block;font-family:'Noto Sans JP',sans-serif;font-size:.55rem;color:rgba(168,152,128,.4);margin-top:3px;letter-spacing:.12em}
+.footer-links{display:flex;gap:20px}
+.footer-links a{color:rgba(168,152,128,.5);text-decoration:none;font-size:.75rem;transition:color .48s cubic-bezier(.25,.46,.45,.94)}
+.footer-links a:hover{color:#d4a05a;transition:color .22s cubic-bezier(.25,.46,.45,.94)}
+.footer-copy{width:100%;text-align:center;font-size:.65rem;color:rgba(168,152,128,.25);margin-top:28px;padding-top:20px;border-top:1px solid rgba(255,255,255,.03)}
 
-/* ===== FLOATING CTA (MOBILE) ===== */
-.floating-cta{display:none;position:fixed;bottom:0;left:0;right:0;z-index:99;padding:12px 16px;background:rgba(250,246,240,.97);backdrop-filter:blur(12px);border-top:1px solid rgba(196,120,58,.12)}
-.floating-cta .cta-btn{width:100%;justify-content:center;padding:16px;font-size:1rem}
+/* ===== FLOATING CTA ===== */
+.floating-cta{display:none;position:fixed;bottom:0;left:0;right:0;z-index:99;padding:10px 16px;background:rgba(28,21,16,.96);backdrop-filter:blur(12px);border-top:1px solid rgba(212,160,90,.1)}
+.floating-cta .cta-btn{width:100%;justify-content:center;padding:14px;font-size:.95rem}
 
 /* ===== RESPONSIVE ===== */
 @media(max-width:900px){
-  .concept-grid{grid-template-columns:1fr}
-  .menu-grid{grid-template-columns:1fr}
-  .voice-grid{grid-template-columns:1fr}
+  .hero-grid{grid-template-columns:1fr;text-align:center}
+  .hero-text{padding:120px 0 40px}
+  .hero-visual{padding:0 0 40px}
+  .hero-emoji-grid{margin:0 auto}
+  .message-grid{grid-template-columns:1fr}
+  .message-emoji{margin-bottom:24px}
+  .menu-grid{grid-template-columns:repeat(2,1fr)}
+  .takeout-grid{grid-template-columns:1fr}
+  .takeout-emoji{margin-top:24px;order:2}
+  .voice-card{min-width:260px}
   .access-grid{grid-template-columns:1fr}
-  .numbers-grid{grid-template-columns:1fr;gap:32px}
-  section{padding:72px 0}
+  .numbers-grid{grid-template-columns:repeat(3,1fr)}
+  section{padding:64px 0}
 }
 @media(max-width:600px){
   .container{padding:0 16px}
-  section{padding:56px 0}
-  .concept-card{padding:28px 20px}
-  .voice-card{padding:24px 20px}
-  .info-row{flex-direction:column;gap:4px}
+  section{padding:48px 0}
+  .menu-grid{grid-template-columns:1fr}
+  .numbers-grid{grid-template-columns:1fr;gap:12px}
+  .number-card{padding:20px 16px}
+  .info-row{flex-direction:column;gap:3px}
   .info-label{width:auto}
   .floating-cta{display:block}
-  .cta-btn{padding:14px 32px}
-  .hero-catch{letter-spacing:.02em}
-  .takeout-card{padding:32px 20px}
-  .intro{padding:56px 0}
+  .cta-btn{padding:12px 28px}
+  .takeout-hours{flex-direction:column;gap:12px}
 }
 </style>
 </head>
@@ -259,10 +252,7 @@ section{padding:96px 0;position:relative}
 <!-- ===== HEADER ===== -->
 <header class="site-header" id="header">
   <div class="container header-inner">
-    <a href="#" class="logo">
-      暖らん
-      <span class="logo-sub">やきとりバル</span>
-    </a>
+    <a href="#" class="logo">暖らん<span class="logo-sub">やきとりバル</span></a>
     <a href="tel:0929335539" class="header-tel">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
       092-933-5539
@@ -270,280 +260,210 @@ section{padding:96px 0;position:relative}
   </div>
 </header>
 
-<!-- ===== HERO ===== -->
+<!-- ===== HERO — ジグザグ型FV ===== -->
 <section class="hero" id="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-glow"></div>
-  <div class="hero-content">
-    <div class="hero-line"></div>
-    <span class="hero-catch-pre">福岡・宇美町<span class="sm">の</span>焼き鳥バル</span>
-    <h1 class="hero-catch">
-      今日<span class="sm">も</span>おつかれさま。<br>
-      <span class="accent">暖</span>かい串<span class="sm">と</span>、<br class="sp-only">笑顔<span class="sm">が</span>待ってます。
-    </h1>
-    <p class="hero-sub">
-      カウンター<span class="sm">で</span>一人<span class="sm">で</span>ほっと一息。<br>
-      座敷<span class="sm">で</span>家族<span class="sm">や</span>仲間<span class="sm">と</span>わいわい。<br>
-      どちら<span class="sm">の</span>夜<span class="sm">も</span>、ここ<span class="sm">に</span>あります。
-    </p>
-    <a href="tel:0929335539" class="cta-btn">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-      今夜<span class="sm">の</span>席<span class="sm">を</span>予約する
-    </a>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <span class="hero-tag">宇美町<span class="sm">の</span>焼き鳥バル</span>
+        <h1>
+          今日<span class="sm">も</span>おつかれさま。<br>
+          <span class="accent">暖</span>かい串<span class="sm">と</span>、<br class="sp-only">
+          笑顔<span class="sm">が</span>待ってます。
+        </h1>
+        <p class="hero-sub">
+          カウンター<span class="sm">で</span>ほっと一息。<br>
+          座敷<span class="sm">で</span>家族<span class="sm">や</span>仲間<span class="sm">と</span>わいわい。<br>
+          どちら<span class="sm">の</span>夜<span class="sm">も</span>、ここ<span class="sm">に</span>あります。
+        </p>
+        <a href="tel:0929335539" class="cta-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          今夜<span class="sm">の</span>席<span class="sm">を</span>予約する
+        </a>
+        <p class="cta-sub">18:00〜24:00（月曜定休）</p>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-emoji-grid">
+          <div class="hero-emoji-card"><div class="emoji">&#x1F362;</div><div class="card-label">串もの</div></div>
+          <div class="hero-emoji-card"><div class="emoji">&#x1F37A;</div><div class="card-label">ドリンク</div></div>
+          <div class="hero-emoji-card"><div class="emoji">&#x1F60A;</div><div class="card-label">笑顔</div></div>
+          <div class="hero-emoji-card"><div class="emoji">&#x1F46A;</div><div class="card-label">家族</div></div>
+          <div class="hero-emoji-card"><div class="emoji">&#x1F525;</div><div class="card-label">炭火</div></div>
+          <div class="hero-emoji-card"><div class="emoji">&#x1F3E0;</div><div class="card-label">居心地</div></div>
+        </div>
+      </div>
+    </div>
   </div>
-  <a href="#intro" class="hero-scroll">SCROLL</a>
+  <a href="#message" class="hero-scroll">SCROLL</a>
 </section>
 
-<!-- ===== INTRO MESSAGE ===== -->
-<section class="intro" id="intro">
+<!-- ===== MESSAGE — ジグザグ（左：絵文字 / 右：テキスト） ===== -->
+<section class="bg-brown" id="message">
   <div class="container">
-    <p class="intro-text reveal">
-      「おかえり」「いらっしゃい」<span class="sm">の</span>声<span class="sm">が</span>聞こえる、<br>
-      宇美町<span class="sm">の</span>小さな焼き鳥バル。<br><br>
-      串物<span class="sm">は</span>全部<span class="sm">で</span>32種類。<br>
-      一本一本、心<span class="sm">を</span>込めて焼き上げます。<br><br>
-      お子様<span class="sm">から</span>ご年配<span class="sm">の</span>方<span class="sm">まで</span>、<br>
-      みんな<span class="sm">が</span>笑顔<span class="sm">に</span>なれる場所<span class="sm">で</span>ありたい。
-    </p>
+    <div class="message-grid reveal">
+      <div class="message-emoji">&#x1F30F;&#x2728;</div>
+      <div class="message-body">
+        <h2>「おかえり」「いらっしゃい」<span class="sm">の</span><br>声<span class="sm">が</span>聞こえるお店。</h2>
+        <p>
+          串物<span class="sm">は</span>全部<span class="sm">で</span>32種類。<br>
+          一本一本、心<span class="sm">を</span>込めて焼き上げます。<br><br>
+          お子様<span class="sm">から</span>ご年配<span class="sm">の</span>方<span class="sm">まで</span>、<br>
+          みんな<span class="sm">が</span>笑顔<span class="sm">に</span>なれる場所<span class="sm">で</span>ありたい。<br>
+          2019年<span class="sm">の</span>開業以来、変わらない想いです。
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- ===== NUMBERS ===== -->
-<section class="numbers">
+<section class="numbers bg-dark">
   <div class="container">
     <div class="numbers-grid reveal">
-      <div class="number-item">
-        <div class="num">32<span style="font-size:.5em;color:#7a6a56">種</span></div>
+      <div class="number-card">
+        <div class="num">32<span class="num-unit">種</span></div>
         <div class="num-label">串物<span class="sm">の</span>ラインナップ</div>
       </div>
-      <div class="number-item">
-        <div class="num">2019<span style="font-size:.4em;color:#7a6a56">年〜</span></div>
-        <div class="num-label">宇美町<span class="sm">で</span>開業</div>
+      <div class="number-card">
+        <div class="num">150<span class="num-unit">円〜</span></div>
+        <div class="num-label">ボリューム串<span class="sm">を</span>この価格<span class="sm">で</span></div>
       </div>
-      <div class="number-item">
-        <div class="num">26<span style="font-size:.5em;color:#7a6a56">席</span></div>
+      <div class="number-card">
+        <div class="num">26<span class="num-unit">席</span></div>
         <div class="num-label">カウンター8＋座敷18</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== CONCEPT ===== -->
-<section class="concept" id="concept">
-  <div class="container text-center">
-    <div class="reveal">
-      <span class="section-label">Concept</span>
-      <h2 class="section-title">暖らん<span class="sm">が</span>大切<span class="sm">に</span>していること</h2>
-      <p class="section-lead">
-        日々<span class="sm">の</span>疲れ<span class="sm">が</span>吹き飛ぶくらい<span class="sm">の</span><br class="sp-only">笑顔<span class="sm">と</span>元気<span class="sm">を</span>届けたい。
-      </p>
-    </div>
-    <div class="concept-grid">
-      <div class="concept-card reveal">
-        <div class="concept-emoji">&#x1F3E0;</div>
-        <h3>帰りたくなる居心地</h3>
-        <p>カウンター越し<span class="sm">の</span>会話。座敷<span class="sm">で</span><span class="sm">の</span>笑い声。「また来たい」<span class="sm">じゃ</span>なくて「また帰ってきた」<span class="sm">と</span>思える場所。</p>
-      </div>
-      <div class="concept-card reveal">
-        <div class="concept-emoji">&#x1F356;</div>
-        <h3>大きな串<span class="sm">で</span>お腹いっぱい</h3>
-        <p>1本1本<span class="sm">が</span>大きくて食べ応えあり。独自ブレンド<span class="sm">の</span>塩<span class="sm">で</span>、素材<span class="sm">の</span>おいしさ<span class="sm">を</span>まっすぐ<span class="sm">に</span>。串<span class="sm">は</span>150円〜。</p>
-      </div>
-      <div class="concept-card reveal">
-        <div class="concept-emoji">&#x1F46A;</div>
-        <h3>みんな<span class="sm">で</span>来れる</h3>
-        <p>キッズメニューあり。座敷<span class="sm">は</span>最大18名。お子様<span class="sm">も</span>、おじいちゃんおばあちゃん<span class="sm">も</span>。家族<span class="sm">の</span>食卓<span class="sm">の</span>延長<span class="sm">で</span>す。</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== MENU ===== -->
-<section class="menu" id="menu">
+<!-- ===== MENU — カード型グリッド ===== -->
+<section class="bg-brown" id="menu">
   <div class="container">
     <div class="text-center reveal">
-      <span class="section-label">Menu</span>
-      <h2 class="section-title">おしながき</h2>
-      <p class="section-lead">
+      <span class="sec-label">Menu</span>
+      <h2 class="sec-title">おしながき</h2>
+      <p class="sec-lead">
         「あれ<span class="sm">も</span>食べたい、これ<span class="sm">も</span>食べたい」<br class="sp-only"><span class="sm">が</span>きっと見つかります。
       </p>
     </div>
-
     <div class="menu-grid">
       <div class="menu-card reveal">
-        <h3>串もの（国産）</h3>
-        <p>豚バラ・砂ずり・ハツ・セセリ・ねぎま・鶏レバー<span class="sm">など</span>定番<span class="sm">から</span>創作串<span class="sm">まで</span>全32種。一本一本<span class="sm">が</span>ボリューミー。</p>
+        <div class="menu-emoji">&#x1F357;</div>
+        <h3>串もの 全32種</h3>
+        <p>豚バラ・砂ずり・ハツ・セセリ・ねぎま・鶏レバー<span class="sm">など</span>。一本一本<span class="sm">が</span>ボリューミー。</p>
         <div class="price">150円〜</div>
       </div>
       <div class="menu-card reveal">
+        <div class="menu-emoji">&#x1F96C;</div>
         <h3>人気No.1 レタス巻き</h3>
-        <p>女性<span class="sm">や</span>お子様<span class="sm">に</span>大人気<span class="sm">の</span>看板メニュー。シャキシャキ<span class="sm">の</span>レタス<span class="sm">と</span>ジューシー<span class="sm">な</span>お肉<span class="sm">の</span>絶妙<span class="sm">な</span>バランス。</p>
+        <p>シャキシャキ<span class="sm">の</span>レタス<span class="sm">と</span>ジューシー<span class="sm">な</span>お肉。女性<span class="sm">や</span>お子様<span class="sm">に</span>大人気。</p>
       </div>
       <div class="menu-card reveal">
-        <h3>国産厚切りタンステーキ</h3>
-        <p>ぶ厚く切った国産タン<span class="sm">を</span>じっくり焼き上げた一品。ちょっと<span class="sm">い</span><span class="sm">い</span>日<span class="sm">の</span>ご褒美<span class="sm">に</span>。</p>
+        <div class="menu-emoji">&#x1F969;</div>
+        <h3>厚切りタンステーキ</h3>
+        <p>ぶ厚く切った国産タン<span class="sm">を</span>じっくり焼き上げた一品。ちょっといい日<span class="sm">の</span>ご褒美<span class="sm">に</span>。</p>
       </div>
       <div class="menu-card reveal">
+        <div class="menu-emoji">&#x1F373;</div>
         <h3>鉄板・ご飯もの</h3>
-        <p>手作りハンバーグ・焼おにぎり串・親子丼<span class="sm">など</span>、〆<span class="sm">まで</span>楽しめる充実<span class="sm">の</span>ラインナップ。</p>
+        <p>手作りハンバーグ・焼おにぎり串・親子丼<span class="sm">など</span>、〆<span class="sm">まで</span>楽しめます。</p>
       </div>
       <div class="menu-card reveal">
+        <div class="menu-emoji">&#x1F37B;</div>
         <h3>ドリンク</h3>
-        <p>生ビール・サワー各種・ハイボール・焼酎・日本酒・カクテル<span class="sm">など</span>豊富<span class="sm">に</span>ご用意。ノンアルコール<span class="sm">も</span>。</p>
+        <p>生ビール・サワー・ハイボール・焼酎・日本酒・カクテル。ノンアルコール<span class="sm">も</span>。</p>
         <div class="price">生ビール 570円〜</div>
       </div>
       <div class="menu-card reveal">
+        <div class="menu-emoji">&#x1F476;</div>
         <h3>キッズメニュー</h3>
-        <p>唐揚げ・親子丼<span class="sm">など</span>お子様<span class="sm">も</span>楽しめるメニュー<span class="sm">を</span>ご用意。ご家族<span class="sm">で</span>のご来店、大歓迎です。</p>
+        <p>唐揚げ・親子丼<span class="sm">など</span>ご用意。ご家族<span class="sm">で</span>のご来店、大歓迎です。</p>
       </div>
     </div>
-
-    <p class="menu-note reveal">※ 仕入れ状況<span class="sm">に</span><span class="sm">より</span>、内容<span class="sm">が</span>変更<span class="sm">に</span>なる場合<span class="sm">が</span>ございます。</p>
-
-    <div class="mid-cta reveal">
-      <a href="tel:0929335539" class="cta-btn">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        今夜<span class="sm">の</span>空席<span class="sm">を</span>確認する
-      </a>
-      <p class="mid-cta-sub">18:00〜24:00（月曜定休）</p>
-    </div>
+    <p class="menu-note reveal">※ 仕入れ状況<span class="sm">に</span><span class="sm">より</span>内容<span class="sm">が</span>変わる場合<span class="sm">が</span>あります</p>
   </div>
 </section>
 
-<!-- ===== TAKEOUT & DELIVERY ===== -->
-<section class="takeout" id="takeout">
+<!-- ===== TAKEOUT — ジグザグ（左：テキスト / 右：絵文字） ===== -->
+<section class="bg-dark" id="takeout">
   <div class="container">
     <div class="text-center reveal">
-      <span class="section-label">Takeout & Delivery</span>
-      <h2 class="section-title">お持ち帰り・配達</h2>
+      <span class="sec-label">Takeout & Delivery</span>
+      <h2 class="sec-title">お持ち帰り・配達</h2>
     </div>
-    <div class="takeout-card reveal">
-      <h3>おうち<span class="sm">で</span><span class="sm">も</span>、暖らん<span class="sm">の</span>味<span class="sm">を</span>。</h3>
-      <p>
-        お店<span class="sm">と</span>同じ気持ち<span class="sm">で</span>焼き上げた串<span class="sm">を</span>、<br class="sp-only">
-        ご自宅<span class="sm">の</span>食卓<span class="sm">へ</span>お届けします。<br>
-        お電話<span class="sm">に</span><span class="sm">て</span>ご注文ください。
-      </p>
-      <div class="takeout-hours">
-        <div>
-          <div class="label">テイクアウト</div>
-          <div class="time">17:00〜23:00</div>
-        </div>
-        <div>
-          <div class="label">デリバリー</div>
-          <div class="time">17:00〜21:00</div>
+    <div class="takeout-grid reveal">
+      <div class="takeout-body">
+        <h3>おうち<span class="sm">で</span><span class="sm">も</span>、暖らん<span class="sm">の</span>味<span class="sm">を</span>。</h3>
+        <p>お店<span class="sm">と</span>同じ気持ち<span class="sm">で</span>焼き上げた串<span class="sm">を</span>、ご自宅<span class="sm">の</span>食卓<span class="sm">へ</span>。お電話<span class="sm">に</span><span class="sm">て</span>ご注文ください。</p>
+        <div class="takeout-hours">
+          <div><div class="label">テイクアウト</div><div class="time">17:00〜23:00</div></div>
+          <div><div class="label">デリバリー</div><div class="time">17:00〜21:00</div></div>
         </div>
       </div>
+      <div class="takeout-emoji">&#x1F6F5;&#x1F4E6;</div>
     </div>
   </div>
 </section>
 
-<!-- ===== VOICE ===== -->
-<section class="voice" id="voice">
+<!-- ===== VOICE — 横スクロールカード型 ===== -->
+<section class="bg-brown" id="voice">
   <div class="container">
     <div class="text-center reveal">
-      <span class="section-label">Voice</span>
-      <h2 class="section-title">お客様<span class="sm">の</span>声</h2>
-      <p class="section-lead">
-        嬉しい言葉<span class="sm">が</span>、<br class="sp-only">明日<span class="sm">の</span>元気<span class="sm">に</span>なっています。
-      </p>
-    </div>
-
-    <div class="voice-grid">
-      <div class="voice-card reveal">
-        <div class="voice-stars">★★★★★</div>
-        <p class="voice-text">焼鳥1本<span class="sm">が</span>すごくボリューム<span class="sm">が</span>あり、コスパ最高。明るくて雰囲気<span class="sm">が</span>いいお店です。</p>
-        <span class="voice-attr">男性・常連</span>
-      </div>
-      <div class="voice-card reveal">
-        <div class="voice-stars">★★★★★</div>
-        <p class="voice-text">いつ<span class="sm">も</span>利用しています。スタッフみなさんいい方ばかり<span class="sm">で</span>、料理<span class="sm">も</span>美味しい。安心<span class="sm">し</span><span class="sm">て</span>通えるお店です。</p>
-        <span class="voice-attr">女性・ファミリー</span>
-      </div>
-      <div class="voice-card reveal">
-        <div class="voice-stars">★★★★★</div>
-        <p class="voice-text">レタス巻き<span class="sm">が</span>絶品。子ども<span class="sm">も</span>大喜び<span class="sm">で</span>した。座敷<span class="sm">が</span>あるので家族連れ<span class="sm">に</span><span class="sm">は</span>ありがたい。</p>
-        <span class="voice-attr">30代 女性・家族ディナー</span>
-      </div>
-      <div class="voice-card reveal">
-        <div class="voice-stars">★★★★★</div>
-        <p class="voice-text">一人<span class="sm">で</span>ふらっと寄りました<span class="sm">が</span>、カウンター<span class="sm">で</span>居心地良し。串<span class="sm">の</span>種類<span class="sm">が</span>多くて何度来ても飽きない。</p>
-        <span class="voice-attr">40代 男性・一人飲み</span>
-      </div>
+      <span class="sec-label">Voice</span>
+      <h2 class="sec-title">お客様<span class="sm">の</span>声</h2>
+      <p class="sec-lead">嬉しい言葉<span class="sm">が</span>、明日<span class="sm">の</span>元気<span class="sm">に</span>なっています。</p>
     </div>
   </div>
+  <div class="voice-scroll">
+    <div style="min-width:24px;flex-shrink:0"></div>
+    <div class="voice-card reveal">
+      <div class="voice-stars">★★★★★</div>
+      <p class="voice-text">焼鳥1本<span class="sm">が</span>すごくボリューム<span class="sm">が</span>あり、コスパ最高。明るくて雰囲気<span class="sm">が</span>いいお店です。</p>
+      <span class="voice-attr">男性・常連</span>
+    </div>
+    <div class="voice-card reveal">
+      <div class="voice-stars">★★★★★</div>
+      <p class="voice-text">スタッフみなさんいい方ばかり<span class="sm">で</span>、料理<span class="sm">も</span>美味しい。安心<span class="sm">し</span><span class="sm">て</span>通えるお店です。</p>
+      <span class="voice-attr">女性・ファミリー</span>
+    </div>
+    <div class="voice-card reveal">
+      <div class="voice-stars">★★★★★</div>
+      <p class="voice-text">レタス巻き<span class="sm">が</span>絶品。子ども<span class="sm">も</span>大喜び。座敷<span class="sm">が</span>あるので家族連れ<span class="sm">に</span><span class="sm">は</span>ありがたい。</p>
+      <span class="voice-attr">30代 女性・家族ディナー</span>
+    </div>
+    <div class="voice-card reveal">
+      <div class="voice-stars">★★★★★</div>
+      <p class="voice-text">一人<span class="sm">で</span>ふらっと寄りました<span class="sm">が</span>、カウンター<span class="sm">で</span>居心地良し。串<span class="sm">の</span>種類<span class="sm">が</span>多くて飽きない。</p>
+      <span class="voice-attr">40代 男性・一人飲み</span>
+    </div>
+    <div style="min-width:24px;flex-shrink:0"></div>
+  </div>
+  <p class="voice-hint">← スワイプ<span class="sm">で</span>もっと見る</p>
 </section>
 
-<!-- ===== ACCESS ===== -->
-<section class="access" id="access">
+<!-- ===== ACCESS — ジグザグ型 ===== -->
+<section class="bg-dark" id="access">
   <div class="container">
     <div class="text-center reveal">
-      <span class="section-label">Access</span>
-      <h2 class="section-title">アクセス・店舗情報</h2>
+      <span class="sec-label">Access</span>
+      <h2 class="sec-title">アクセス・店舗情報</h2>
     </div>
-
     <div class="access-grid reveal">
       <div class="access-map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.5!2d130.5184!3d33.5705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3541854751984e55%3A0xb59ceaf923ecfe2d!2z44KE44GN44Go44KK44OQ44Or5pqW44KJ44KT!5e0!3m2!1sja!2sjp!4v1700000000000!5m2!1sja!2sjp" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="やきとりバル暖らんの地図"></iframe>
       </div>
       <div>
         <div class="info-table">
-          <div class="info-row">
-            <div class="info-label">店名</div>
-            <div class="info-value">やきとりバル 暖らん</div>
-          </div>
-          <div class="info-row">
-            <div class="info-label">住所</div>
-            <div class="info-value">〒811-2128<br>福岡県糟屋郡宇美町宇美中央1丁目1-2<br>ロイヤルプラザ 1F</div>
-          </div>
-          <div class="info-row">
-            <div class="info-label">電話</div>
-            <div class="info-value"><a href="tel:0929335539">092-933-5539</a></div>
-          </div>
-          <div class="info-row">
-            <div class="info-label">営業時間</div>
-            <div class="info-value">
-              18:00〜24:00<br>
-              <span style="font-size:.8rem;color:#9a8a76">（L.O. 23:30）</span>
-            </div>
-          </div>
-          <div class="info-row">
-            <div class="info-label">テイクアウト</div>
-            <div class="info-value">17:00〜23:00</div>
-          </div>
-          <div class="info-row">
-            <div class="info-label">デリバリー</div>
-            <div class="info-value">17:00〜21:00</div>
-          </div>
-          <div class="info-row">
-            <div class="info-label">定休日</div>
-            <div class="info-value">月曜日<span style="font-size:.8rem;color:#9a8a76">（祝日<span class="sm">の</span>場合<span class="sm">は</span>翌火曜日）</span></div>
-          </div>
-          <div class="info-row">
-            <div class="info-label">席数</div>
-            <div class="info-value">26席（カウンター8席・座敷 最大18名）</div>
-          </div>
-          <div class="info-row">
-            <div class="info-label">お支払い</div>
-            <div class="info-value">
-              現金 / クレジットカード
-              <div class="payment-grid">
-                <span class="payment-tag">PayPay</span>
-                <span class="payment-tag">楽天ペイ</span>
-                <span class="payment-tag">d払い</span>
-                <span class="payment-tag">auPay</span>
-                <span class="payment-tag">メルペイ</span>
-                <span class="payment-tag">VISA</span>
-                <span class="payment-tag">JCB</span>
-                <span class="payment-tag">Mastercard</span>
-                <span class="payment-tag">AMEX</span>
-              </div>
-            </div>
-          </div>
-          <div class="info-row">
-            <div class="info-label">Instagram</div>
-            <div class="info-value"><a href="https://www.instagram.com/yakitoribaru_danran/" target="_blank" rel="noopener noreferrer">@yakitoribaru_danran</a></div>
-          </div>
+          <div class="info-row"><div class="info-label">店名</div><div class="info-value">やきとりバル 暖らん</div></div>
+          <div class="info-row"><div class="info-label">住所</div><div class="info-value">〒811-2128<br>福岡県糟屋郡宇美町宇美中央1-1-2<br>ロイヤルプラザ 1F</div></div>
+          <div class="info-row"><div class="info-label">電話</div><div class="info-value"><a href="tel:0929335539">092-933-5539</a></div></div>
+          <div class="info-row"><div class="info-label">営業時間</div><div class="info-value">18:00〜24:00<span style="font-size:.78rem;color:rgba(168,152,128,.5)">（L.O. 23:30）</span></div></div>
+          <div class="info-row"><div class="info-label">テイクアウト</div><div class="info-value">17:00〜23:00</div></div>
+          <div class="info-row"><div class="info-label">デリバリー</div><div class="info-value">17:00〜21:00</div></div>
+          <div class="info-row"><div class="info-label">定休日</div><div class="info-value">月曜日<span style="font-size:.78rem;color:rgba(168,152,128,.5)">（祝日<span class="sm">は</span>翌火曜）</span></div></div>
+          <div class="info-row"><div class="info-label">席数</div><div class="info-value">26席（カウンター8 + 座敷18）</div></div>
+          <div class="info-row"><div class="info-label">お支払い</div><div class="info-value">現金 / カード<div class="pay-grid"><span class="pay-tag">PayPay</span><span class="pay-tag">楽天ペイ</span><span class="pay-tag">d払い</span><span class="pay-tag">auPay</span><span class="pay-tag">メルペイ</span><span class="pay-tag">VISA</span><span class="pay-tag">JCB</span><span class="pay-tag">MC</span><span class="pay-tag">AMEX</span></div></div></div>
+          <div class="info-row"><div class="info-label">Instagram</div><div class="info-value"><a href="https://www.instagram.com/yakitoribaru_danran/" target="_blank" rel="noopener noreferrer">@yakitoribaru_danran</a></div></div>
         </div>
         <ul class="access-note">
           <li>JR宇美駅<span class="sm">より</span>徒歩約7分</li>
@@ -558,7 +478,8 @@ section{padding:96px 0;position:relative}
 <section class="cta-section" id="cta">
   <div class="container" style="position:relative;z-index:1">
     <div class="reveal">
-      <h2 class="cta-title mincho">今日<span class="sm">の</span>一杯、ここ<span class="sm">で</span>どうですか。</h2>
+      <div class="cta-emoji">&#x1F37B;</div>
+      <h2 class="cta-title round">今日<span class="sm">の</span>一杯、ここ<span class="sm">で</span>どうですか。</h2>
       <p class="cta-lead">
         おいしい串<span class="sm">と</span>、あったかい空気<span class="sm">と</span>、<br>
         誰か<span class="sm">の</span>笑い声。それだけ<span class="sm">で</span>、いい夜<span class="sm">に</span>なる。
@@ -567,8 +488,8 @@ section{padding:96px 0;position:relative}
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         今夜<span class="sm">の</span>席<span class="sm">を</span>予約する
       </a>
-      <a href="tel:0929335539" class="cta-tel-number">092-933-5539</a>
-      <p class="cta-hours">営業時間 18:00〜24:00（月曜定休）</p>
+      <a href="tel:0929335539" class="cta-tel">092-933-5539</a>
+      <p class="cta-hours">営業 18:00〜24:00（月曜定休）</p>
     </div>
   </div>
 </section>
@@ -577,10 +498,7 @@ section{padding:96px 0;position:relative}
 <footer class="site-footer">
   <div class="container">
     <div class="footer-inner">
-      <div class="footer-logo">
-        やきとりバル 暖らん
-        <span>焼き鳥・バル｜福岡県糟屋郡宇美町</span>
-      </div>
+      <div class="footer-logo">やきとりバル 暖らん<span>福岡県糟屋郡宇美町</span></div>
       <div class="footer-links">
         <a href="https://www.instagram.com/yakitoribaru_danran/" target="_blank" rel="noopener noreferrer">Instagram</a>
         <a href="tel:0929335539">電話予約</a>
@@ -590,7 +508,7 @@ section{padding:96px 0;position:relative}
   </div>
 </footer>
 
-<!-- ===== FLOATING CTA (MOBILE) ===== -->
+<!-- ===== FLOATING CTA ===== -->
 <div class="floating-cta">
   <a href="tel:0929335539" class="cta-btn">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -598,75 +516,25 @@ section{padding:96px 0;position:relative}
   </a>
 </div>
 
-<!-- ===== JAVASCRIPT ===== -->
+<!-- ===== JS ===== -->
 <script>
 (function(){
   'use strict';
+  var header=document.getElementById('header');
+  window.addEventListener('scroll',function(){header.classList.toggle('scrolled',window.pageYOffset>60)},{passive:true});
 
-  var header = document.getElementById('header');
-  window.addEventListener('scroll', function(){
-    if(window.pageYOffset > 60){
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
-    }
-  }, {passive: true});
-
-  var reveals = document.querySelectorAll('.reveal');
+  var reveals=document.querySelectorAll('.reveal');
   if('IntersectionObserver' in window){
-    var observer = new IntersectionObserver(function(entries){
-      entries.forEach(function(entry){
-        if(entry.isIntersecting){
-          entry.target.classList.add('is-visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.15,
-      rootMargin: '0px 0px -40px 0px'
-    });
-    reveals.forEach(function(el){
-      observer.observe(el);
-    });
-  } else {
-    reveals.forEach(function(el){
-      el.classList.add('is-visible');
-    });
-  }
+    var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('is-visible');obs.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -30px 0px'});
+    reveals.forEach(function(el){obs.observe(el)});
+  } else {reveals.forEach(function(el){el.classList.add('is-visible')})}
 
-  document.querySelectorAll('a[href^="#"]').forEach(function(a){
-    a.addEventListener('click', function(e){
-      var target = document.querySelector(this.getAttribute('href'));
-      if(target){
-        e.preventDefault();
-        target.scrollIntoView({behavior: 'smooth'});
-      }
-    });
-  });
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var t=document.querySelector(this.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}})});
 
-  var floatingCta = document.querySelector('.floating-cta');
-  var ctaSection = document.getElementById('cta');
-  if(floatingCta && ctaSection){
-    var ctaObserver = new IntersectionObserver(function(entries){
-      entries.forEach(function(entry){
-        floatingCta.style.opacity = entry.isIntersecting ? '0' : '1';
-        floatingCta.style.pointerEvents = entry.isIntersecting ? 'none' : 'auto';
-      });
-    }, {threshold: 0.1});
-    ctaObserver.observe(ctaSection);
-
-    var heroSection = document.getElementById('hero');
-    if(heroSection){
-      var heroObserver = new IntersectionObserver(function(entries){
-        entries.forEach(function(entry){
-          if(entry.isIntersecting){
-            floatingCta.style.opacity = '0';
-            floatingCta.style.pointerEvents = 'none';
-          }
-        });
-      }, {threshold: 0.3});
-      heroObserver.observe(heroSection);
-    }
+  var fc=document.querySelector('.floating-cta'),cs=document.getElementById('cta'),hs=document.getElementById('hero');
+  if(fc&&cs){
+    new IntersectionObserver(function(entries){entries.forEach(function(e){fc.style.opacity=e.isIntersecting?'0':'1';fc.style.pointerEvents=e.isIntersecting?'none':'auto'})},{threshold:.1}).observe(cs);
+    if(hs){new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){fc.style.opacity='0';fc.style.pointerEvents='none'}})},{threshold:.3}).observe(hs)}
   }
 })();
 </script>
