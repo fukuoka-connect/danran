@@ -156,6 +156,32 @@ section{padding:88px 0;position:relative}
 .menu-card .price{color:#e8b868;font-family:'Zen Maru Gothic',sans-serif;font-weight:700;font-size:.9rem;margin-top:10px}
 .menu-note{font-size:.78rem;color:rgba(168,152,128,.5);text-align:center;margin-top:28px}
 
+/* ===== MENU DETAIL ===== */
+.menu-category{background:rgba(255,255,255,.03);border:1px solid rgba(212,160,90,.06);border-radius:16px;padding:28px 24px;margin-top:20px}
+.menu-cat-title{font-size:1.05rem;color:#f5ede4;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.menu-cat-emoji{font-size:1.4rem}
+.menu-cat-count{font-size:.65rem;color:#d4a05a;background:rgba(212,160,90,.1);padding:3px 12px;border-radius:16px;margin-left:4px;font-family:'Noto Sans JP',sans-serif;font-weight:500}
+.menu-items{display:flex;flex-wrap:wrap;gap:8px}
+.menu-items.compact{flex-direction:column;gap:4px}
+.menu-items.compact .menu-item{border:none;padding:4px 0;font-size:.82rem;background:none}
+.menu-item{font-size:.78rem;color:#c8b8a0;background:rgba(212,160,90,.04);border:1px solid rgba(212,160,90,.06);padding:6px 14px;border-radius:10px;line-height:1.5}
+.menu-item.highlight{border-color:rgba(232,184,104,.2);color:#e8b868}
+.menu-item.popular{border-color:rgba(212,160,90,.25);color:#e8b868;position:relative}
+.menu-item.popular::before{content:'人気';font-size:.55rem;background:#d4a05a;color:#1c1510;padding:1px 6px;border-radius:8px;margin-right:4px;font-weight:700;vertical-align:middle}
+.menu-item-note{font-size:.72rem;color:rgba(168,152,128,.4);margin-top:12px}
+.menu-detail{font-size:.7rem;color:rgba(168,152,128,.5);line-height:1.6}
+.menu-sub{margin-top:16px;padding-top:16px;border-top:1px solid rgba(212,160,90,.06)}
+.menu-sub-title{font-family:'Zen Maru Gothic',sans-serif;font-size:.88rem;color:#d4a05a;margin-bottom:12px;font-weight:500}
+.menu-grid-2col{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}
+.menu-grid-2col .menu-category{margin-top:0}
+.menu-drink-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.drink-group{display:flex;flex-direction:column;gap:3px}
+.drink-group h4{font-family:'Zen Maru Gothic',sans-serif;font-size:.8rem;color:#d4a05a;margin-bottom:6px;font-weight:500}
+.drink-group .menu-item{border:none;padding:2px 0;background:none;font-size:.78rem}
+.drink-group .menu-detail{font-size:.68rem;color:rgba(168,152,128,.4);line-height:1.5;margin-top:2px}
+@media(max-width:900px){.menu-grid-2col{grid-template-columns:1fr}.menu-drink-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.menu-drink-grid{grid-template-columns:1fr}}
+
 /* ===== TAKEOUT（ジグザグ右） ===== */
 .takeout-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:center;margin-top:48px}
 .takeout-body h3{font-size:clamp(1.2rem,3vw,1.5rem);color:#f5ede4;margin-bottom:16px}
@@ -346,41 +372,200 @@ section{padding:88px 0;position:relative}
         「あれ<span class="sm">も</span>食べたい、これ<span class="sm">も</span>食べたい」<br class="sp-only"><span class="sm">が</span>きっと見つかります。
       </p>
     </div>
-    <div class="menu-grid">
-      <div class="menu-card reveal">
-        <div class="menu-emoji">&#x1F357;</div>
-        <h3>串もの 全32種</h3>
-        <p>豚バラ・砂ずり・ハツ・セセリ・ねぎま・鶏レバー<span class="sm">など</span>。一本一本<span class="sm">が</span>ボリューミー。</p>
-        <div class="price">150円〜</div>
+
+    <!-- 串もの -->
+    <div class="menu-category reveal">
+      <h3 class="menu-cat-title"><span class="menu-cat-emoji">&#x1F357;</span>串もの<span class="menu-cat-count">32種</span></h3>
+      <div class="menu-items">
+        <span class="menu-item">国産豚バラ<span class="sm">…</span>200円</span>
+        <span class="menu-item">砂ずり<span class="sm">…</span>180円</span>
+        <span class="menu-item">ハツ<span class="sm">…</span>150円</span>
+        <span class="menu-item">鶏レバー<span class="sm">…</span>180円</span>
+        <span class="menu-item">ささみ<span class="sm">…</span>180円</span>
+        <span class="menu-item">鶏皮<span class="sm">…</span>180円</span>
+        <span class="menu-item">ねぎま<span class="sm">…</span>180円</span>
+        <span class="menu-item">セセリ<span class="sm">…</span>180円</span>
+        <span class="menu-item">ヤゲン軟骨<span class="sm">…</span>170円</span>
+        <span class="menu-item">豚のど軟骨<span class="sm">…</span>170円</span>
+        <span class="menu-item">味噌ホルモン<span class="sm">…</span>170円</span>
+        <span class="menu-item">味噌サガリ<span class="sm">…</span>170円</span>
+        <span class="menu-item">だんご<span class="sm">…</span>140円〜</span>
+        <span class="menu-item">手羽先<span class="sm">…</span>220円</span>
+        <span class="menu-item">にんにく<span class="sm">…</span>180円</span>
+        <span class="menu-item">雲仙ハム<span class="sm">…</span>250円</span>
+        <span class="menu-item">イカ下足<span class="sm">…</span>260円</span>
+        <span class="menu-item">ぼんじり<span class="sm">…</span>140円</span>
+        <span class="menu-item">地鶏<span class="sm">…</span>180円</span>
+        <span class="menu-item">焼きおにぎり串<span class="sm">…</span>220円</span>
+        <span class="menu-item highlight">牛中落ち<span class="sm">…</span>330円</span>
       </div>
-      <div class="menu-card reveal">
-        <div class="menu-emoji">&#x1F96C;</div>
-        <h3>人気No.1 レタス巻き</h3>
-        <p>シャキシャキ<span class="sm">の</span>レタス<span class="sm">と</span>ジューシー<span class="sm">な</span>お肉。女性<span class="sm">や</span>お子様<span class="sm">に</span>大人気。</p>
+      <p class="menu-item-note">※ キャベツ盛りおかわり 150円</p>
+    </div>
+
+    <!-- 巻もの・創作串 -->
+    <div class="menu-category reveal">
+      <h3 class="menu-cat-title"><span class="menu-cat-emoji">&#x1F96C;</span>巻もの・創作串</h3>
+      <div class="menu-items">
+        <span class="menu-item popular">レタス巻き<span class="sm">…</span>220円</span>
+        <span class="menu-item">ナス<span class="sm">…</span>150円</span>
+        <span class="menu-item">トマト<span class="sm">…</span>180円</span>
+        <span class="menu-item">しそ（大葉）<span class="sm">…</span>180円</span>
+        <span class="menu-item">山芋しそ<span class="sm">…</span>200円</span>
+        <span class="menu-item">アスパラ<span class="sm">…</span>200円</span>
+        <span class="menu-item">チーズベーコン<span class="sm">…</span>200円</span>
+        <span class="menu-item">うずらベーコン<span class="sm">…</span>200円</span>
       </div>
-      <div class="menu-card reveal">
-        <div class="menu-emoji">&#x1F969;</div>
-        <h3>厚切りタンステーキ</h3>
-        <p>ぶ厚く切った国産タン<span class="sm">を</span>じっくり焼き上げた一品。ちょっといい日<span class="sm">の</span>ご褒美<span class="sm">に</span>。</p>
-      </div>
-      <div class="menu-card reveal">
-        <div class="menu-emoji">&#x1F373;</div>
-        <h3>鉄板・ご飯もの</h3>
-        <p>手作りハンバーグ・焼おにぎり串・親子丼<span class="sm">など</span>、〆<span class="sm">まで</span>楽しめます。</p>
-      </div>
-      <div class="menu-card reveal">
-        <div class="menu-emoji">&#x1F37B;</div>
-        <h3>ドリンク</h3>
-        <p>生ビール・サワー・ハイボール・焼酎・日本酒・カクテル。ノンアルコール<span class="sm">も</span>。</p>
-        <div class="price">生ビール 570円〜</div>
-      </div>
-      <div class="menu-card reveal">
-        <div class="menu-emoji">&#x1F476;</div>
-        <h3>キッズメニュー</h3>
-        <p>唐揚げ・親子丼<span class="sm">など</span>ご用意。ご家族<span class="sm">で</span>のご来店、大歓迎です。</p>
+      <div class="menu-sub reveal">
+        <h4 class="menu-sub-title">創作串</h4>
+        <div class="menu-items">
+          <span class="menu-item">ささみ4種<span class="sm">…</span>220円<br><span class="menu-detail">梅しそ / わさび / 柚子胡椒 / ジャポネソース</span></span>
+          <span class="menu-item">自家製つくね4種<span class="sm">…</span>330円<br><span class="menu-detail">焼きチーズ / 特製たれ / ネギ塩れもん / 明太マヨ</span></span>
+          <span class="menu-item">豚バラ3種<span class="sm">…</span>330円<br><span class="menu-detail">味噌ダレ / おろしポン酢 / ガッツリにんにく</span></span>
+          <span class="menu-item highlight">焼き豚足<span class="sm">…</span>500円</span>
+        </div>
       </div>
     </div>
-    <p class="menu-note reveal">※ 仕入れ状況<span class="sm">に</span><span class="sm">より</span>内容<span class="sm">が</span>変わる場合<span class="sm">が</span>あります</p>
+
+    <!-- 揚げ物 -->
+    <div class="menu-grid-2col">
+      <div class="menu-category reveal">
+        <h3 class="menu-cat-title"><span class="menu-cat-emoji">&#x1F35F;</span>揚げ物</h3>
+        <div class="menu-items compact">
+          <span class="menu-item">漬け込み唐揚げ<span class="sm">…</span>770円</span>
+          <span class="menu-item">たこ<span class="sm">の</span>唐揚げ<span class="sm">…</span>700円</span>
+          <span class="menu-item">ヤゲン軟骨唐揚げ<span class="sm">…</span>600円</span>
+          <span class="menu-item">チーズスティック<span class="sm">…</span>550円</span>
+          <span class="menu-item">皮付きポテト<span class="sm">…</span>550円</span>
+          <span class="menu-item">カマンベールフライ<span class="sm">…</span>620円〜</span>
+        </div>
+      </div>
+      <div class="menu-category reveal">
+        <h3 class="menu-cat-title"><span class="menu-cat-emoji">&#x1F525;</span>鉄板</h3>
+        <div class="menu-items compact">
+          <span class="menu-item">チーズとろろ焼き<span class="sm">…</span>680円</span>
+          <span class="menu-item">明太とろろ焼き<span class="sm">…</span>700円</span>
+          <span class="menu-item highlight">ピリ辛和牛ホルモン<span class="sm">…</span>1,100円</span>
+          <span class="menu-item">手ごねハンバーグ<span class="sm">…</span>850円</span>
+          <span class="menu-item">鶏トマトチーズ焼き<span class="sm">…</span>880円</span>
+          <span class="menu-item highlight">リヴフィンガー<span class="sm">…</span>1,280円</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 逸品・ご飯もの -->
+    <div class="menu-grid-2col">
+      <div class="menu-category reveal">
+        <h3 class="menu-cat-title"><span class="menu-cat-emoji">&#x2728;</span>逸品</h3>
+        <div class="menu-items compact">
+          <span class="menu-item">炙り鶏ユッケ<span class="sm">…</span>700円</span>
+          <span class="menu-item">鶏もものたたき<span class="sm">…</span>770円</span>
+          <span class="menu-item">合鴨のたたき<span class="sm">…</span>800円</span>
+          <span class="menu-item">だし巻き卵<span class="sm">…</span>580円〜</span>
+          <span class="menu-item">焼きチーズ<span class="sm">…</span>660円</span>
+          <span class="menu-item">豚バラキムチ炒め<span class="sm">…</span>770円</span>
+        </div>
+      </div>
+      <div class="menu-category reveal">
+        <h3 class="menu-cat-title"><span class="menu-cat-emoji">&#x1F35A;</span>ご飯もの</h3>
+        <div class="menu-items compact">
+          <span class="menu-item">親子丼<span class="sm">…</span>600円</span>
+          <span class="menu-item">卵雑炊<span class="sm">…</span>500円</span>
+          <span class="menu-item">温玉明太ごはん<span class="sm">…</span>440円</span>
+          <span class="menu-item">卵かけごはん<span class="sm">…</span>280円</span>
+          <span class="menu-item">塩焼きラーメン<span class="sm">…</span>770円</span>
+          <span class="menu-item">おにぎり 1ヶ<span class="sm">…</span>220円</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- サラダ・おつまみ -->
+    <div class="menu-grid-2col">
+      <div class="menu-category reveal">
+        <h3 class="menu-cat-title"><span class="menu-cat-emoji">&#x1F957;</span>サラダ</h3>
+        <div class="menu-items compact">
+          <span class="menu-item">温玉シーザー<span class="sm">…</span>680円</span>
+          <span class="menu-item">チョレギサラダ<span class="sm">…</span>580円</span>
+          <span class="menu-item">ラーメンサラダ<span class="sm">…</span>700円</span>
+          <span class="menu-item">暖らんサラダ<span class="sm">…</span>790円</span>
+          <span class="menu-item">生ハム巻きサラダ<span class="sm">…</span>580円</span>
+        </div>
+      </div>
+      <div class="menu-category reveal">
+        <h3 class="menu-cat-title"><span class="menu-cat-emoji">&#x1F37A;</span>おつまみ</h3>
+        <div class="menu-items compact">
+          <span class="menu-item">冷奴<span class="sm">…</span>330円</span>
+          <span class="menu-item">枝豆<span class="sm">…</span>400円</span>
+          <span class="menu-item">本格キムチ<span class="sm">…</span>440円</span>
+          <span class="menu-item">特製きゅうり一本漬け<span class="sm">…</span>330円</span>
+          <span class="menu-item">アボカド刺し<span class="sm">…</span>500円</span>
+          <span class="menu-item">ピリ辛チャンジャ<span class="sm">…</span>500円</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ドリンク -->
+    <div class="menu-category reveal">
+      <h3 class="menu-cat-title"><span class="menu-cat-emoji">&#x1F37B;</span>ドリンク</h3>
+      <div class="menu-drink-grid">
+        <div class="drink-group">
+          <h4>ビール</h4>
+          <span class="menu-item">生ビール 350ml<span class="sm">…</span>570円</span>
+          <span class="menu-item">オリンピック生 555ml<span class="sm">…</span>750円</span>
+          <span class="menu-item">メガ生 800ml<span class="sm">…</span>1,100円</span>
+        </div>
+        <div class="drink-group">
+          <h4>サワー</h4>
+          <span class="menu-item">各種<span class="sm">…</span>500円</span>
+          <span class="menu-detail">巨峰 / 青りんご / ゆず / レモン / ライム / カルピス / 桃 ほか</span>
+        </div>
+        <div class="drink-group">
+          <h4>ハイボール</h4>
+          <span class="menu-item">ブラックニッカ<span class="sm">…</span>540円</span>
+          <span class="menu-item">角<span class="sm">…</span>660円</span>
+          <span class="menu-item">余市 / セッション<span class="sm">…</span>700円</span>
+        </div>
+        <div class="drink-group">
+          <h4>焼酎</h4>
+          <span class="menu-item">グラス<span class="sm">…</span>450円〜</span>
+          <span class="menu-detail">黒霧島 / 島美人 / 木挽BLUE / 二階堂 / 白岳しろ / 雲海</span>
+        </div>
+        <div class="drink-group">
+          <h4>日本酒 一合</h4>
+          <span class="menu-item">京山水<span class="sm">…</span>550円</span>
+          <span class="menu-item">繁枡<span class="sm">…</span>950円</span>
+          <span class="menu-item">鍋島 / 寒北斗<span class="sm">…</span>1,100円</span>
+          <span class="menu-item">八海山<span class="sm">…</span>1,100円</span>
+          <span class="menu-item">雪漫々<span class="sm">…</span>1,200円</span>
+        </div>
+        <div class="drink-group">
+          <h4>カクテル・ワイン</h4>
+          <span class="menu-item">カシス各種<span class="sm">…</span>550円</span>
+          <span class="menu-item">ピーチ各種<span class="sm">…</span>550円</span>
+          <span class="menu-item">ワイン グラス<span class="sm">…</span>550円</span>
+          <span class="menu-item">ノンアルビール<span class="sm">…</span>440円</span>
+          <span class="menu-item">ノンアルカクテル<span class="sm">…</span>440円</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- キッズ -->
+    <div class="menu-category reveal">
+      <h3 class="menu-cat-title"><span class="menu-cat-emoji">&#x1F476;</span>キッズメニュー</h3>
+      <div class="menu-items">
+        <span class="menu-item">豚バラ<span class="sm">…</span>200円</span>
+        <span class="menu-item">だんご<span class="sm">…</span>140円</span>
+        <span class="menu-item">ウインナー<span class="sm">…</span>140円</span>
+        <span class="menu-item">ねぎま<span class="sm">…</span>180円</span>
+        <span class="menu-item">うずら巻き<span class="sm">…</span>200円</span>
+        <span class="menu-item">チーズ巻き<span class="sm">…</span>200円</span>
+        <span class="menu-item">おにぎり 1ヶ<span class="sm">…</span>220円</span>
+        <span class="menu-item">親子丼<span class="sm">…</span>600円</span>
+        <span class="menu-item">唐揚げ<span class="sm">…</span>770円</span>
+        <span class="menu-item">もろこしバター<span class="sm">…</span>550円</span>
+      </div>
+    </div>
+
+    <p class="menu-note reveal">※ 表示価格<span class="sm">は</span>税別です。仕入れ状況<span class="sm">に</span><span class="sm">より</span>内容<span class="sm">が</span>変わる場合<span class="sm">が</span>あります。</p>
   </div>
 </section>
 
